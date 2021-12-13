@@ -1,6 +1,6 @@
 .navbar
   &-top
-
+    padding-bottom: 95px
   &-menu
     display: flex
     align-items: center
@@ -21,3 +21,67 @@
     background-color: #fff
     padding: 13px 27px
     margin-left: 37px
+.container
+  &-top
+    display: flex
+    justify-content: space-between
+.about
+  padding-bottom: 100px
+  &-second
+    position: relative
+    &__wrap
+      width: 488px
+      height: 588px
+      background-color: #B3BAC5
+    &__img
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 250px
+      height: 374px
+  &-title
+    font-family: Roboto Condensed
+    font-style: Bold
+    font-size: 48px
+    line-height: 60px
+    &__yellow
+      color: #FAAD13
+    &__blue
+      color: $secondary
+  &-author
+    color: $secondary
+    font-family: roboto
+    font-style: medium
+    font-size: 20px
+    line-height: 24px
+    &__text
+      color: $third
+      font-family: Open Sans
+      font-style: Regular
+      font-size: 18px
+      line-height: 32px
+      padding-bottom: 56px
+  &-click
+    &__buy
+      padding: 18px 37px
+      margin-right: 26px
+      background-color: $primary
+      border: 1px solid $primary
+      color: #FFFFFF
+      font-family: Open Sans
+      font-style: Bold
+      font-size: 16px
+      line-height: 22px
+      border-radius: 8px
+      cursor: pointer
+    &__read
+      border-radius: 8px
+      padding: 17px 50px
+      border: 1px solid $primary
+      color: $primary
+      font-family: Open Sans
+      font-style: Bold
+      font-size: 18px
+      line-height: 25px
+      cursor: pointer
