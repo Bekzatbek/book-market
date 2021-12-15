@@ -4,7 +4,6 @@
 }
 
 .container {
-  border: 1px solid red;
   max-width: 1140px;
   margin: auto;
 }
@@ -23,6 +22,10 @@ a {
 
 button {
   border-radius: 8px;
+}
+
+.modal {
+  font-family: Open Sans;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -379,7 +382,6 @@ template {
     padding-bottom: 60px !important;
   }
   .about-text {
-    border: 1px solid red;
     font-size: 16px !important;
   }
   -click__buy {
@@ -395,6 +397,26 @@ template {
   }
 }
 
+.modal__dialog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 478px;
+  padding: 33px 88px;
+}
+
+.modal__dialog__input {
+  height: 50px;
+}
+
+.modal__dialog__message {
+  max-width: 302px;
+  width: 100%;
+  max-height: 123px;
+  height: 100%;
+  resize: none;
+}
+
 @media (max-width: 992px) {
   .container {
     max-width: 700px;
@@ -406,7 +428,7 @@ template {
     margin-left: 213px !important;
   }
   .about-second__img {
-    max-width: 210px !important;
+    max-width: 250px !important;
   }
   .about-title {
     font-size: 40px !important;
@@ -417,8 +439,9 @@ template {
     line-height: 20px !important;
   }
   .about-text {
-    font-size: 14px !important;
+    font-size: 16px !important;
     line-height: 28px !important;
+    padding-bottom: 25px !important;
   }
   .about-click__buy {
     padding: 10px 20px !important;
@@ -428,7 +451,7 @@ template {
     text-align: center;
   }
   .about-click__read {
-    padding: 9px 20px !important;
+    padding: 8px 20px !important;
     width: 90%;
     display: inline-block;
     text-align: center;
@@ -443,7 +466,7 @@ template {
     width: 92%;
   }
   .container-wrap {
-    margin-bottom: 10px !important;
+    margin-bottom: 30px !important;
   }
   .navbar--mobile_fixed {
     position: fixed;
@@ -458,7 +481,7 @@ template {
   }
   .logo__image {
     width: 90px;
-    padding-top: 20px !important;
+    padding-top: 40px !important;
   }
   .menu-button {
     border: none;
@@ -502,7 +525,6 @@ template {
     cursor: pointer;
   }
   .navbar-right {
-    border: 1px solid green;
     display: none !important;
     position: fixed !important;
     margin: 0 !important;
@@ -510,12 +532,13 @@ template {
     left: 0 !important;
     bottom: 0 !important;
     top: 70px !important;
-    background-color: #fff !important;
+    background-color: #183B56 !important;
     z-index: 100 !important;
     width: 100%;
   }
   .navbar-right--visible {
     display: block !important;
+    overflow: scroll !important;
   }
   .navbar-menu {
     display: -webkit-box;
@@ -526,20 +549,26 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .navbar-menu__link {
+    color: #fff !important;
+  }
   .navbar-button {
     text-align: center;
   }
+  .button-nav {
+    border: none !important;
+  }
   .about {
-    margin-top: 70px !important;
+    margin-top: 100px !important;
   }
   .about-second {
     height: 500px !important;
   }
   .about-second__img {
-    max-width: 200px !important;
+    max-width: 220px !important;
   }
   .about-title {
-    font-size: 30px !important;
+    font-size: 32px !important;
     line-height: 40px !important;
   }
   .about-author {
@@ -549,7 +578,8 @@ template {
   .about-text {
     font-size: 14px !important;
     line-height: 28px !important;
-    padding-bottom: 45px !important;
+    padding-bottom: 10px !important;
+    margin-right: 15px;
   }
   .about-click__buy {
     padding: 10px 20px !important;
@@ -566,11 +596,28 @@ template {
     -ms-flex-preferred-size: 100% !important;
         flex-basis: 100% !important;
   }
+  .modal__dialog {
+    position: fixed !important;
+    left: 50% !important;
+    top: 50% !important;
+    width: 340px !important;
+    padding: 20px 25px !important;
+  }
+  .modal__input {
+    height: 40px !important;
+  }
+  .modal__message {
+    max-width: 302px !important;
+    width: 100% !important;
+    max-height: 123px !important;
+    height: 100% !important;
+    resize: none !important;
+  }
 }
 
 @media (max-width: 575px) {
   .container {
-    width: 87%;
+    width: 87% !important;
   }
   .container-top {
     display: block !important;
@@ -582,6 +629,9 @@ template {
   .about-second {
     display: block !important;
     width: 100% !important;
+  }
+  .about-second__img {
+    max-width: 280px !important;
   }
   .about-title {
     text-align: center;
@@ -608,6 +658,88 @@ template {
   }
 }
 
+@media (min-width: 320px) and (max-width: 400px) {
+  .container {
+    width: 87%;
+  }
+  .about-author {
+    margin-top: 27px !important;
+    font-size: 16px !important;
+  }
+  .about-text {
+    font-size: 16px !important;
+    line-height: 23px !important;
+    width: 280px !important;
+    margin-bottom: 5px !important;
+  }
+  .about-click {
+    text-align: center;
+  }
+  .about-click__buy {
+    margin-left: 25px;
+    width: 176px !important;
+    padding: 8px 19px !important;
+  }
+  .about-click__read {
+    width: 176px !important;
+    font-size: 16px !important;
+    padding: 7px 26px !important;
+    margin-bottom: 36px;
+  }
+  .about-second {
+    min-width: 280px !important;
+    height: 333px !important;
+  }
+  .about-second__img {
+    width: 170px !important;
+  }
+  .modal__overlay {
+    position: fixed !important;
+  }
+  .modal__dialog {
+    position: fixed !important;
+    max-width: 340px !important;
+    width: 85% !important;
+    max-height: 350px !important;
+    left: 50% !important;
+    top: 50% !important;
+    padding: 20px 25px !important;
+    overflow: scroll;
+  }
+  .modal__dialog--visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-height: 90% !important;
+    overflow: auto !important;
+  }
+  .modal__input {
+    font-weight: normal !important;
+    font-size: 12px !important;
+    height: 30px !important;
+  }
+  .modal__message {
+    font-weight: normal !important;
+    font-size: 12px !important;
+    max-width: 302px !important;
+    width: 100% !important;
+    max-height: 123px !important;
+    height: 100% !important;
+    resize: none !important;
+  }
+  .modal__button {
+    margin-top: 20px !important;
+  }
+  .modal__info {
+    position: fixed !important;
+    margin-top: 210px !important;
+    left: 25px !important;
+  }
+  .modal__title {
+    font-size: 14px !important;
+    margin-top: 10px !important;
+  }
+}
+
 .navbar-top {
   padding-bottom: 95px;
 }
@@ -616,9 +748,13 @@ template {
   display: none;
 }
 
-.navbar .container-wrap {
-  height: 60px;
-  margin-bottom: 90px;
+.navbar--mobile_fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 99;
 }
 
 .navbar-menu {
@@ -631,12 +767,16 @@ template {
 }
 
 .navbar-menu__item {
-  margin-right: 20px;
   font-family: Open Sans;
   font-style: SemiBold;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
+}
+
+.navbar-menu__link:last-child {
+  margin-right: 22px;
+  color: #183B56;
 }
 
 .navbar-right {
@@ -650,19 +790,26 @@ template {
       -ms-flex-pack: right;
           justify-content: right;
   margin-top: -45px;
-  margin-left: 655px;
+  margin-left: 638px;
+}
+
+.container-wrap {
+  height: 60px;
+  margin-bottom: 50px;
+  margin-top: -20px;
 }
 
 .logo__image {
+  width: 90px;
   padding-top: 52px;
 }
 
 .button-nav {
   color: #1565D8;
-  border-color: #1565D8;
+  border: 2px solid #1565D8;
   background-color: #fff;
-  padding: 13px 27px;
-  margin-left: 37px;
+  padding: 12px 31px;
+  margin-left: 42px;
   font-family: Open Sans;
   font-style: Bold;
   font-weight: 700;
@@ -681,13 +828,15 @@ template {
 }
 
 .about {
+  margin-left: 7px;
+  margin-top: 175px;
   padding-bottom: 100px;
 }
 
 .about-second {
   position: relative;
-  width: 488px;
-  height: 588px;
+  width: 485px;
+  height: 580px;
   background-color: #B3BAC5;
 }
 
@@ -695,10 +844,9 @@ template {
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-top: 10px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  max-width: 250px;
-  max-height: 374px;
 }
 
 .about-title {
@@ -733,13 +881,14 @@ template {
   font-weight: 500;
   font-size: 18px;
   line-height: 32px;
-  padding-bottom: 56px;
+  padding-bottom: 40px;
+  margin-top: 35px;
   max-width: 585px;
 }
 
 .about-click__buy {
-  padding: 18px 37px;
-  margin-right: 26px;
+  padding: 18px 38px;
+  margin-right: 20px;
   background-color: #1565D8;
   border: 1px solid #1565D8;
   color: #FFFFFF;
@@ -754,14 +903,146 @@ template {
 
 .about-click__read {
   border-radius: 8px;
-  padding: 17px 50px;
-  border: 1px solid #1565D8;
+  padding: 16px 49px;
+  border: 2px solid #1565D8 !important;
   color: #1565D8;
   font-family: Open Sans;
   font-style: Bold;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 18px;
   line-height: 25px;
   cursor: pointer;
+}
+
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  overflow: auto;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  max-width: 478px;
+  max-height: 487px;
+  padding: 33px 88px;
+  background-color: #183B56;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  border-radius: 8px;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+  max-height: 90%;
+  overflow: auto;
+}
+
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  max-width: 302px;
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 4px;
+  border: none;
+  padding: 0 0 0 20px;
+}
+
+.modal__message {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  max-width: 302px;
+  width: 100%;
+  margin-top: 15px;
+  max-height: 123px;
+  height: 100%;
+  resize: none;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 0 0 20px;
+}
+
+.modal__info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
+  border-radius: 4px;
+  border: none;
+}
+
+.modal__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  margin-top: 0;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 4px;
+  border: none;
+}
+
+.modal__button {
+  background-color: #FAAD13;
+  color: #fff;
+  width: 150px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  height: 40px;
 }
 /*# sourceMappingURL=style.css.map */

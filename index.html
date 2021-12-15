@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -40,9 +40,9 @@
                 <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Блог</a></li>
               </ul>
               <!-- /.navbar-menu -->
-              <form action="#" class="navbar-button">
-                <button class="button-nav">Получить</button>
-              </form>
+              <div class="navbar-button">
+                <button data-toggle="modal" class="button-nav">Получить</button>
+              </div>
             </div>
             <!-- ./navbar-right -->
           </div>
@@ -63,17 +63,44 @@
           работу.
         </p>
         <form action="#" class="about-click">
-          <a href="index.html" class="about-click__buy">КУПИТЬ СЕЙЧАС</a>
-          <a href="index.html" class="about-click__read">ЧИТАТЬ ДЕМО</a>
+          <button data-toggle="modal" class="about-click__buy">КУПИТЬ СЕЙЧАС</button>
+          <a href="#" class="about-click__read">ЧИТАТЬ ДЕМО</a>
         </form>
       </div>
       <!-- ./about-first -->
       <div class="about-second">
         <div class="about-second__wrap">
-          <img class="about-second__img" src="img/Book-1.jpg" alt="icon: book">
+          <img class="about-second__img" src="img/book-1.png" alt="icon: book">
         </div>
       </div>
     </div>
+  </div>
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="icon: close">
+      </a>
+      <h3 class="modal__title modal__title--mb-3">
+        Контактные данные
+      </h3>
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" minlength="2"
+          maxlength="50" required>
+
+        <input type="tel" id="phone-1" class="input modal__input" placeholder="Phone Number*" name="phone" required
+          minlength="17" maxlength="17" aria-invalid="true">
+
+        <input type="email" class="input modal__input" placeholder="Email*" name="email" maxlength="50" required>
+
+        <textarea cols="30" rows="10" class="message modal__message" placeholder="Message" name="message"
+          maxlength="150"></textarea>
+        <button class="button modal__button" type="submit">Отправить</button>
+        <span class="modal__info">* Required Fields</span>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
   </div>
   <!-- ./about -->
   <script src="js/jquery-3.6.0.min.js"></script>

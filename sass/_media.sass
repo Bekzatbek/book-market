@@ -9,7 +9,6 @@
   .about
     &-second
     &-text
-      border: 1px solid red
       font-size: 16px!important
   &-click
     &__buy
@@ -20,6 +19,21 @@
       line-height: 25px
   .about-text
     font-size: 15px
+.modal
+  &__dialog
+    position: fixed
+    left: 50%
+    top: 50%
+    width: 478px
+    padding: 33px 88px
+    &__input
+      height: 50px
+    &__message
+      max-width: 302px
+      width: 100%
+      max-height: 123px
+      height: 100%
+      resize: none
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -32,7 +46,7 @@
   .about
     &-second
       &__img
-        max-width: 210px!important
+        max-width: 250px!important
     &-title
       font-size: 40px!important
       line-height: 60px
@@ -40,8 +54,9 @@
       font-size: 18px!important
       line-height: 20px!important
     &-text
-      font-size: 14px!important
+      font-size: 16px!important
       line-height: 28px!important
+      padding-bottom: 25px!important
     &-click
       &__buy
         padding: 10px 20px!important
@@ -50,7 +65,7 @@
         display: inline-block
         text-align: center
       &__read
-        padding: 9px 20px!important
+        padding: 8px 20px!important
         width: 90%
         display: inline-block
         text-align: center
@@ -60,7 +75,7 @@
     max-width: 576px
     width: 92%
     &-wrap
-      margin-bottom: 10px!important
+      margin-bottom: 30px!important
   .navbar
     &--mobile
       &_fixed
@@ -77,7 +92,7 @@
   .logo
     &__image
       width: 90px
-      padding-top: 20px!important
+      padding-top: 40px!important
   .menu
     &-button
       border: none
@@ -87,7 +102,6 @@
         width: 22px!important
         height: 2px!important
         background-color: black!important
-
   .navbar
     &-top
       position: relative
@@ -106,7 +120,6 @@
         border: none!important
         cursor: pointer
     &-right
-      border: 1px solid green
       display: none!important
       position: fixed!important
       margin: 0!important
@@ -114,24 +127,30 @@
       left: 0!important
       bottom: 0!important
       top: 70px!important
-      background-color: #fff!important
+      background-color: #183B56!important
       z-index: 100!important
       width: 100%
       &--visible
         display: block!important
+        overflow: scroll!important
     &-menu
       display: flex
       flex-direction: column
+      &__link
+        color: #fff!important
     &-button
       text-align: center
+  .button
+    &-nav
+      border: none!important
   .about
-    margin-top: 70px!important
+    margin-top: 100px!important
     &-second
       height: 500px!important
       &__img
-        max-width: 200px!important
+        max-width: 220px!important
     &-title
-      font-size: 30px!important
+      font-size: 32px!important
       line-height: 40px!important
     &-author
       font-size: 18px!important
@@ -139,7 +158,8 @@
     &-text
       font-size: 14px!important
       line-height: 28px!important
-      padding-bottom: 45px!important
+      padding-bottom: 10px!important
+      margin-right: 15px
     &-click
       &__buy
         padding: 10px 20px!important
@@ -153,9 +173,24 @@
         display: inline-block
         text-align: center
         flex-basis: 100%!important
+  .modal
+    &__dialog
+      position: fixed!important
+      left: 50%!important
+      top: 50%!important
+      width: 340px!important
+      padding: 20px 25px!important
+    &__input
+      height: 40px!important
+    &__message
+      max-width: 302px!important
+      width: 100%!important
+      max-height: 123px!important
+      height: 100%!important
+      resize: none!important
 @media (max-width: 575px)
   .container
-    width: 87%
+    width: 87%!important
     &-top
       display: block!important
   .about
@@ -165,7 +200,8 @@
     &-second
       display: block!important
       width: 100%!important
-
+      &__img
+        max-width: 280px!important
     &-title
       text-align: center
       line-height: 40px
@@ -182,3 +218,69 @@
       &__read
         width: 100%
         margin-bottom: 40px
+@media (min-width: 320px) and (max-width: 400px)
+  .container
+    width: 87%
+  .about
+    &-author
+      margin-top: 27px!important
+      font-size: 16px!important
+    &-text
+      font-size: 16px!important
+      line-height: 23px!important
+      width: 280px!important
+      margin-bottom: 5px!important
+    &-click
+      text-align: center
+      &__buy
+        margin-left: 25px
+        width: 176px!important
+        padding: 8px 19px!important
+      &__read
+        width: 176px!important
+        font-size: 16px!important
+        padding: 7px 26px!important
+        margin-bottom: 36px
+    &-second
+      min-width: 280px!important
+      height: 333px!important
+      &__img
+        width: 170px!important
+  .modal
+    &__overlay
+      position: fixed!important
+    &__dialog
+      position: fixed!important
+      max-width: 340px!important
+      width: 85%!important
+      max-height: 350px!important
+      left: 50%!important
+      top: 50%!important
+      padding: 20px 25px!important
+      overflow: scroll
+      &--visible
+        visibility: visible!important
+        opacity: 1!important
+        max-height: 90%!important
+        overflow: auto!important
+    &__input
+      font-weight: normal!important
+      font-size: 12px!important
+      height: 30px!important
+    &__message
+      font-weight: normal!important
+      font-size: 12px!important
+      max-width: 302px!important
+      width: 100%!important
+      max-height: 123px!important
+      height: 100%!important
+      resize: none!important
+    &__button
+      margin-top: 20px!important
+    &__info
+      position: fixed!important
+      margin-top: 210px!important
+      left: 25px!important
+    &__title
+      font-size: 14px!important
+      margin-top: 10px!important

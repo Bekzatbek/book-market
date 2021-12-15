@@ -3,36 +3,48 @@
     padding-bottom: 95px
     &__menu-button
       display: none
-  .container
-    &-wrap
-      height: 60px
-      margin-bottom: 90px
+  &--mobile
+    &_fixed
+      position: fixed
+      left: 0
+      top: 0
+      right: 0
+      background-color: #fff
+      z-index: 99
   &-menu
     display: flex
     align-items: center
     &__item
-      margin-right: 20px
       font-family: Open Sans
       font-style: SemiBold
       font-weight: 600
       font-size: 16px
       line-height: 22px
+    &__link:last-child
+      margin-right: 22px
+      color: #183B56
   &-right
     display: flex
     align-items: center
     justify-content: right
     margin-top: -45px
-    margin-left: 655px
+    margin-left: 638px
+.container
+  &-wrap
+    height: 60px
+    margin-bottom: 50px
+    margin-top: -20px
 .logo
   &__image
+    width: 90px
     padding-top: 52px
 .button
   &-nav
     color: #1565D8
-    border-color: #1565D8
+    border: 2px solid #1565D8
     background-color: #fff
-    padding: 13px 27px
-    margin-left: 37px
+    padding: 12px 31px
+    margin-left: 42px
     font-family: Open Sans
     font-style: Bold
     font-weight: 700
@@ -44,20 +56,22 @@
     display: flex
     justify-content: space-between
 .about
+  margin-left: 7px
+  margin-top: 175px
   padding-bottom: 100px
   &-second
     position: relative
-    width: 488px
-    height: 588px
+    width: 485px
+    height: 580px
     background-color: #B3BAC5
     &__wrap
     &__img
       position: absolute
       top: 50%
       left: 50%
+      margin-top: 10px
       transform: translate(-50%, -50%)
-      max-width: 250px
-      max-height: 374px
+
   &-title
     font-size: 48px
     line-height: 60px
@@ -75,6 +89,7 @@
     font-weight: 500
     font-size: 20px
     line-height: 24px
+
   &-text
     color: $third
     font-family: Open Sans
@@ -82,12 +97,13 @@
     font-weight: 500
     font-size: 18px
     line-height: 32px
-    padding-bottom: 56px
+    padding-bottom: 40px
+    margin-top: 35px
     max-width: 585px
   &-click
     &__buy
-      padding: 18px 37px
-      margin-right: 26px
+      padding: 18px 38px
+      margin-right: 20px
       background-color: $primary
       border: 1px solid $primary
       color: #FFFFFF
@@ -100,12 +116,12 @@
       cursor: pointer
     &__read
       border-radius: 8px
-      padding: 17px 50px
-      border: 1px solid $primary
+      padding: 16px 49px
+      border: 2px solid $primary!important
       color: $primary
       font-family: Open Sans
       font-style: Bold
-      font-weight: 500
+      font-weight: 700
       font-size: 18px
       line-height: 25px
       cursor: pointer
