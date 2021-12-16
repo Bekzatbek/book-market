@@ -1,0 +1,206 @@
+.container
+  &-books
+
+.books
+  padding-bottom: 50px
+  display: flex
+  &-second
+    margin-left: 32px
+  &-title
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 32px
+    line-height: 40px
+    letter-spacing: 0.2px
+    color: #183B56
+    margin-top: 0
+.card
+  display: flex
+  width: 358px
+  height: 260px
+  border: 1px solid red
+  border-radius: 8px
+  margin-bottom: 32px
+
+.book
+  display: flex
+  justify-content: center
+  flex-direction: column
+  &-image
+    text-align: center
+    max-width: 160px
+    max-height: 255px
+    object-fit: cover
+    overflow: hidden
+    border-radius: 8px
+    margin: 10px 0 1px 11px
+  &-name
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    color: #183B56
+    letter-spacing: 0.2px
+    margin-left: 20px
+    margin-top: 25px
+  &-genre
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: #183B56
+    margin: 15px 0 0 20px
+  &-price
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 0.2px
+    color: #1565D8
+    margin: 25px 0 0 20px
+  &-butlike
+    display: flex
+    margin: 26px 0 0 18px
+  &-button
+    width: 101px
+    height: 36px
+    border: 1px solid #ECEEF2
+    background: #183B56
+    border-radius: 18px!important
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: #FFFFFF
+    text-align: center
+  &-like
+    margin-left: 25px
+    margin-top: 5px
+.recom
+  &-second
+    display: flex
+    flex-direction: column
+  &-button
+    width: 751px
+    height: 72px
+    margin-top: -5px
+    margin-left: -390px
+    background: #f7f8fa
+    mix-blend-mode: normal
+    border-radius: 8px
+    border: none
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+    letter-spacing: 0.2px
+    color: #1565D8
+/** card-big **/
+.lider
+  margin-top: -65px
+  &-title
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 32px
+    line-height: 40px
+    letter-spacing: 0.2px
+    color: #183B56
+    margin-left: 30px
+    margin-top: 0
+.card
+  &-big
+    width: 360px
+    height: 942px
+    border-radius: 8px
+
+    margin-left: 32px
+    background-color: #f7f8fa
+.top
+  &-image
+    max-width: 120px
+    max-height: 182px
+    margin: 24px 0 0 24px
+    border-radius: 8px
+  &-wrap
+    display: flex
+
+    margin-bottom: 8px
+  &-link
+    display: flex
+    align-items: center
+    justify-content: center
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+    letter-spacing: 0.2px
+    color: #1565D8
+    margin-top: 25px
+.small
+  display: flex
+  justify-content: center
+  flex-direction: column
+  &-name
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    color: #183B56
+    letter-spacing: 0.2px
+    margin-left: 23px
+    margin-top: 35px
+  &-price
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 0.2px
+    color: #1565D8
+    margin: 17px 0 0 25px
+  &-button
+    width: 101px
+    height: 36px
+    border: 1px solid #ECEEF2
+    background: #183B56
+    border-radius: 18px!important
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: #FFFFFF
+    text-align: center
+    margin-left: 25px
+    margin-top: 20px
+hr
+  border: 1px solid #ECEEF2
+  width: 312px
+  margin-top: 20px
+
+a.book
+  &-like
+    background: url(../img/recom/heart.png)
+    background-repeat: no-repeat
+    display: block
+    width: 20px
+    margin-top: 10px
+  &-like:hover
+    background: url(../img/recom/red-heart.png)
+    background-size: 20px
+    background-repeat: no-repeat
+  &-like:focus
+    background: url(../img/recom/red-heart.png)
+    background-size: 20px
+    background-repeat: no-repeat

@@ -24,7 +24,7 @@
           <a href="index.html" class="logo">
             <img src="img/Logo.svg" alt="Logo: Book market" class="logo__image">
           </a>
-          <div class="menu-button__wrap">
+          <div class="navbar__wrap">
             <button class="menu-button navbar-top__menu-button">
               <span class="menu-button__line"></span>
               <span class="menu-button__line"></span>
@@ -34,23 +34,21 @@
           <div class="navbar-menu">
             <div class="navbar-right">
               <ul class="navbar-menu">
-                </li>
                 <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Рекомендации</a></li>
                 <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Книги</a></li>
                 <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Блог</a></li>
+                <li data-toggle="modal" class="navbar-menu__item"><a href="#"
+                    class="navbar-menu__link button-nav">Получить</a></li>
               </ul>
               <!-- /.navbar-menu -->
-              <div class="navbar-button">
-                <button data-toggle="modal" class="button-nav">Получить</button>
-              </div>
+
             </div>
             <!-- ./navbar-right -->
           </div>
         </div>
       </div>
+    </div>
 
-    </div>
-    </div>
   </header>
   <div class="about">
     <div class="container container-top">
@@ -75,6 +73,195 @@
       </div>
     </div>
   </div>
+  <!-- ./about -->
+  <div class="container container-books">
+    <h2 class="books-title">Рекомендации</h2>
+    <div class="books">
+      <!-- /.books-title -->
+      <div class="books-first">
+        <div class="card">
+          <div class="recom-first">
+            <img src="img/recom/book-1.png" alt="icon: book-1" class="book-image">
+          </div>
+          <!-- /.recom-first -->
+          <div class="recom-second">
+            <div class="book">
+              <span class="book-name">The World of <br> Abstract Art</span>
+              <span class="book-genre">Art & Design</span>
+              <span class="book-price">$25.00</span>
+              <div class="book-butlike">
+                <button class="book-button">Купить</button>
+                <a class="book-like" tabindex="1"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.card -->
+        <div class="card">
+          <div class="recom-first">
+            <img src="img/recom/book-2.png" alt="icon: book-2" class="book-image">
+          </div>
+          <!-- /.recom-first -->
+          <div class="recom-second">
+            <div class="book">
+              <span class="book-name">The Blue <br> Flowers Ray…</span>
+              <span class="book-genre">Novel</span>
+              <span class="book-price">$25.00</span>
+              <div class="book-butlike">
+                <button class="book-button">Купить</button>
+
+                <a class="book-like" tabindex="1"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.card -->
+        <div class="card">
+          <div class="recom-first">
+            <img src="img/recom/book-3.png" alt="icon: book-3" class="book-image">
+          </div>
+          <!-- /.recom-first -->
+          <div class="recom-second">
+            <div class="book">
+              <span class="book-name">WMNDFL : <br> The Inspiration</span>
+              <span class="book-genre">Business</span>
+              <span class="book-price">$25.00</span>
+              <div class="book-butlike">
+                <button class="book-button">Купить</button>
+                <a class="book-like" tabindex="1"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.card -->
+      </div>
+      <div class="books-second">
+        <div class="card">
+          <div class="recom-first">
+            <img src="img/recom/book-4.png" alt="icon: book-4" class="book-image">
+          </div>
+          <!-- /.recom-first -->
+          <div class="recom-second">
+            <div class="book">
+              <span class="book-name">Educated : <br> a Memoir</span>
+              <span class="book-genre">Education</span>
+              <span class="book-price">$25.00</span>
+              <div class="book-butlike">
+                <button class="book-button">Купить</button>
+                <a class="book-like" tabindex="1"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.card -->
+        <div class="card">
+          <div class="recom-first">
+            <img src="img/recom/book-5.png" alt="icon: book-5" class="book-image">
+          </div>
+          <!-- /.recom-first -->
+          <div class="recom-second">
+            <div class="book">
+              <span class="book-name">There There : <br> a Novel by TO</span>
+              <span class="book-genre">Novel</span>
+              <span class="book-price">$25.00</span>
+              <div class="book-butlike">
+                <button class="book-button">Купить</button>
+                <a class="book-like" tabindex="1"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.card -->
+        <div class="card">
+          <div class="recom-first">
+            <img src="img/recom/book-6.png" alt="icon: book-1" class="book-image">
+          </div>
+          <!-- /.recom-first -->
+          <div class="recom-second">
+            <div class="book">
+              <span class="book-name">Making <br> Things Happen</span>
+              <span class="book-genre">Motivation</span>
+              <span class="book-price">$25.00</span>
+              <div class="book-butlike">
+                <button class="book-button">Купить</button>
+                <a class="book-like" tabindex="1"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.card -->
+        <a href="#"><button class="recom-button">БОЛЬШЕ РЕКОМЕНДАЦИЙ</button></a>
+      </div>
+
+      <div class="lider">
+        <h2 class="lider-title">Топ Месяца</h2>
+        <!-- /.lider-title -->
+        <div class="card-big">
+          <div class="top-wrap">
+            <div class="top-first">
+              <img src="img/recom/top-1.jpg" alt="icon: book-1" class="top-image">
+            </div>
+            <!-- /.recom-first -->
+            <div class="top-second">
+              <div class="small">
+                <span class="small-name">Sprint : Solve,<br> Test in 5 Days</span>
+                <span class="small-price">$23.00</span>
+                <button class="small-button">Купить</button>
+              </div>
+            </div>
+          </div>
+          <!-- ./top-wrap -->
+          <div class="top-wrap">
+            <div class="top-first">
+              <img src="img/recom/top-2.jpg" alt="icon: book-1" class="top-image">
+            </div>
+            <!-- /.recom-first -->
+            <div class="top-second">
+              <div class="small">
+                <span class="small-name">Hacking Growth <br> Break Problem</span>
+                <span class="small-price">$23.00</span>
+                <button class="small-button">Купить</button>
+              </div>
+            </div>
+          </div>
+          <!-- ./top-wrap -->
+          <div class="top-wrap">
+            <div class="top-first">
+              <img src="img/recom/top-3.jpg" alt="icon: book-1" class="top-image">
+            </div>
+            <!-- /.recom-first -->
+            <div class="top-second">
+              <div class="small">
+                <span class="small-name">Very Nice a <br> Novel by Mercy</span>
+                <span class="small-price">$23.00</span>
+                <button class="small-button">Купить</button>
+              </div>
+            </div>
+          </div>
+          <!-- ./top-wrap -->
+          <div class="top-wrap">
+            <div class="top-first">
+              <img src="img/recom/top-4.jpg" alt="icon: book-1" class="top-image">
+            </div>
+            <!-- /.recom-first -->
+            <div class="top-second">
+              <div class="small">
+                <span class="small-name">Hooked : How to <br> Build Products</span>
+                <span class="small-price">$23.00</span>
+                <button class="small-button">Купить</button>
+              </div>
+            </div>
+          </div>
+          <!-- ./top-wrap -->
+          <hr>
+          <a href="#" class="top-link">ЛУЧШИЕ КНИГИ</a>
+        </div>
+        <!-- ./card-big -->
+      </div>
+      <!-- /.lider -->
+    </div>
+  </div>
+  <!-- /.books -->
   <div class="modal">
     <div class="modal__overlay"></div>
     <!-- /.modal__overlay -->
@@ -107,7 +294,6 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
-  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 

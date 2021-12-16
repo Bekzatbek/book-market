@@ -1,6 +1,6 @@
 .navbar
   &-top
-    padding-bottom: 95px
+    background-color: #fff
     &__menu-button
       display: none
   &--mobile
@@ -27,50 +27,37 @@
     display: flex
     align-items: center
     justify-content: right
-    margin-top: -45px
-    margin-left: 638px
+    margin-top: -60px
+    margin-left: 635px
 .container
   &-wrap
     height: 60px
-    margin-bottom: 50px
     margin-top: -20px
+    padding-top: 15px
 .logo
   &__image
     width: 90px
     padding-top: 52px
-.button
-  &-nav
-    color: #1565D8
-    border: 2px solid #1565D8
-    background-color: #fff
-    padding: 12px 31px
-    margin-left: 42px
-    font-family: Open Sans
-    font-style: Bold
-    font-weight: 700
-    font-size: 16px
-    line-height: 22px
-    cursor: pointer
+.button-nav
+  color: #1565D8
+  border: 2px solid #1565D8
+  background-color: #fff
+  padding: 12px 31px
+  margin-left: 42px
+  font-family: Open Sans
+  font-style: Bold
+  font-weight: 700
+  font-size: 16px
+  line-height: 22px
+  border-radius: 8px
+  cursor: pointer
 .container
   &-top
     display: flex
     justify-content: space-between
 .about
-  margin-left: 7px
-  margin-top: 175px
+  padding-top: 195px
   padding-bottom: 100px
-  &-second
-    position: relative
-    width: 485px
-    height: 580px
-    background-color: #B3BAC5
-    &__wrap
-    &__img
-      position: absolute
-      top: 50%
-      left: 50%
-      margin-top: 10px
-      transform: translate(-50%, -50%)
 
   &-title
     font-size: 48px
@@ -97,7 +84,7 @@
     font-weight: 500
     font-size: 18px
     line-height: 32px
-    padding-bottom: 40px
+    padding-bottom: 35px
     margin-top: 35px
     max-width: 585px
   &-click
@@ -117,7 +104,7 @@
     &__read
       border-radius: 8px
       padding: 16px 49px
-      border: 2px solid $primary!important
+      border: 2px solid $primary
       color: $primary
       font-family: Open Sans
       font-style: Bold
@@ -125,3 +112,18 @@
       font-size: 18px
       line-height: 25px
       cursor: pointer
+  &-second
+    position: relative
+    width: 488px
+    height: 580px
+    background-color: #f7f8fa
+    margin-top: -15px
+    &__img
+      position: absolute
+      top: 50%
+      left: 50%
+      margin-top: 18px
+      transform: translate(-50%, -50%)
+      opacity: 1!important
+      object-fit: cover
+    &__wrap

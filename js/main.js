@@ -60,7 +60,6 @@ function openModal() {
 }
 
 function closeModal(event) {
-  
   event.preventDefault();
   var modalOverlay = $(".modal__overlay");
   var modalDialog = $(".modal__dialog");
@@ -107,6 +106,13 @@ $(document).ready(function () {
 $("#phone-1").mask("+7(999) 999-99-99");
 });
 
-AOS.init();
+var allStates = $("svg.us > *");
+
+allStates.on("click", function() {
+  
+  allStates.removeClass("on");
+  $(this).addClass("on");
+  
+});
 
 });
