@@ -1,3 +1,12 @@
+@media (max-width: 1440px)
+  .navbar
+    &-right
+      margin-left: 635px
+      margin-top: -45px
+      padding-bottom: 10px
+    &-top
+      background-color: #fff
+
 @media (max-width: 1200px)
   .container
     max-width: 960px
@@ -19,21 +28,43 @@
       line-height: 25px
   .about-text
     font-size: 15px
-.modal
-  &__dialog
-    position: fixed
-    left: 50%
-    top: 50%
-    width: 478px
-    padding: 33px 88px
-    &__input
-      height: 50px
-    &__message
-      max-width: 302px
-      width: 100%
-      max-height: 123px
-      height: 100%
-      resize: none
+  .modal
+    &__dialog
+      position: fixed
+      left: 50%
+      top: 50%
+      width: 478px
+      padding: 33px 88px
+      &__input
+        height: 50px
+      &__message
+        max-width: 302px
+        width: 100%
+        max-height: 123px
+        height: 100%
+        resize: none
+  .books
+    &-first
+      max-width: 358px
+    &-second
+      display: none
+  .card
+    width: 400px
+    &-big
+      width: 460px
+  .recom
+    &-second
+      width: 200px
+    &-button
+      width: 400px
+      margin-left: -410px
+  .book
+    margin-left: 20px
+    &-image
+      max-width: 190px
+      max-height: 255px
+      margin: 1px 0 1px 11px
+
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -71,6 +102,22 @@
       &-second
         &__img
           max-width: 250px
+  .card
+    max-width: 340px
+    &-big
+      width: 330px
+  .book
+    margin-left: -7px
+    &-image
+      max-width: 160px
+      max-height: 255px
+      margin: 10px 0 1px 11px
+  .small
+    margin-left: -10px
+  .recom
+    &-button
+      width: 335px
+      margin-left: -340px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -95,6 +142,9 @@
         margin-bottom: 30px
       &__link
         color: #fff!important
+        &-but
+          color: #183B56
+          text-align: center
   .logo
     &__image
       width: 90px
@@ -144,6 +194,7 @@
   .button-nav
     margin: 0
     border: none
+    margin-left: -20px
   .about
     padding-top: 120px
     &-second
@@ -193,11 +244,120 @@
       max-height: 123px
       height: 100%
       resize: none
+  .books
+    &-first
+      margin-right: 0
+  .card
+    width: 270px
+    height: 215px
+    border: 1px solid red
+    border-radius: 8px
+    margin-bottom: 32px
+  .book
+    margin-left: -10px
+    &-image
+      text-align: center
+      max-width: 130px
+      max-height: 255px
+      margin: 10px 0 1px 11px
+    &-name
+      font-size: 18px
+      line-height: 20px
+      margin-left: 20px
+      margin-top: 20px
+    &-genre
+      font-size: 12px
+      line-height: 22px
+      margin: 10px 0 0 20px
+    &-price
+      font-size: 16px
+      line-height: 24px
+      margin: 5px 0 0 20px
+    &-butlike
+      margin: 10px 0 0 18px
+    &-button
+      margin-top: 5px
+      width: 80px
+      height: 28px
+      font-size: 12px
+      color: #FFFFFF
+      text-align: center
+    &-like
+      margin-left: 10px
+  .card
+    &-big
+      width: 230px
+      height: 780px
+      border-radius: 8px
+
+      margin-left: 32px
+      background-color: #f7f8fa
+  .top
+    &-image
+      max-width: 90px
+      max-height: 182px
+      margin: 12px 0 0 10px
+      border-radius: 8px
+    &-wrap
+      display: flex
+      margin-bottom: 28px
+    &-link
+      display: flex
+      align-items: center
+      justify-content: center
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      text-align: center
+      letter-spacing: 0.2px
+      color: #1565D8
+      margin-top: 25px
+  .small
+    &-name
+      font-size: 14px
+      line-height: 20px
+      color: #183B56
+      letter-spacing: 0.2px
+      margin-left: 23px
+      margin-top: 20px
+    &-price
+      font-size: 14px
+      line-height: 18px
+      letter-spacing: 0.2px
+      color: #1565D8
+      margin: 17px 0 0 25px
+    &-button
+      width: 80px
+      height: 28px
+      font-size: 12px
+      border: 1px solid #ECEEF2
+      color: #FFFFFF
+      text-align: center
+      margin-left: 25px
+      margin-top: 15px
+  hr
+    border: 1px solid #ECEEF2
+    width: 192px
+    margin-top: 20px
+  .recom
+    position: relative
+    &-button
+      position: absolute
+      width: 270px
+      height: 50px
+      margin-right: 0
+      margin-left: -270px
+      margin-top: 340px
+  .lider
+
 @media (max-width: 575px)
   .container
     width: 87%
     &-top
       display: block
+
   .about
     padding-top: 120px
     &-first
@@ -209,7 +369,6 @@
       &__img
         max-width: 280px
     &-title
-
       text-align: center
       line-height: 40px
     &-author
@@ -226,6 +385,146 @@
       &__read
         width: 100%
         margin-bottom: 40px
+  .books
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin: auto
+    &-first
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      padding-bottom: 90px
+    &-title
+      display: flex
+      align-items: center
+      justify-content: center
+    &-second
+      margin-left: 0
+  .card
+    min-width: 358px
+    height: 260px
+    border: 1px solid red
+    border-radius: 8px
+    margin-bottom: 32px
+  .book
+    margin-left: -10px
+    &-image
+      text-align: center
+      max-width: 160px
+      height: 240px
+      margin: 10px 0 1px 11px
+    &-name
+      font-size: 22px
+      line-height: 32px
+      color: #183B56
+      letter-spacing: 0.2px
+      margin-left: 20px
+      margin-top: 25px
+    &-genre
+      font-size: 16px
+      line-height: 22px
+      color: #183B56
+      margin: 15px 0 0 20px
+    &-price
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: 0.2px
+      color: #1565D8
+      margin: 25px 0 0 20px
+    &-butlike
+      margin: 26px 0 0 18px
+    &-button
+      margin-top: 0px
+      width: 101px
+      height: 36px
+      font-size: 16px
+      line-height: 22px
+      color: #FFFFFF
+      text-align: center
+    &-like
+      margin-left: 25px
+  .card
+    &-big
+      width: 360px
+      height: 942px
+      border-radius: 8px
+      margin-left: 0px
+      background-color: #f7f8fa
+  .top
+    &-image
+      max-width: 120px
+      max-height: 182px
+      margin: 24px 0 0 24px
+      border-radius: 8px
+    &-wrap
+      display: flex
+      margin-bottom: 8px
+    &-link
+      display: flex
+      align-items: center
+      justify-content: center
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      text-align: center
+      letter-spacing: 0.2px
+      color: #1565D8
+      margin-top: 25px
+  .small
+    &-name
+      font-size: 22px
+      line-height: 32px
+      color: #183B56
+      letter-spacing: 0.2px
+      margin-left: 23px
+      margin-top: 35px
+    &-price
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: 0.2px
+      color: #1565D8
+      margin: 17px 0 0 25px
+    &-button
+      width: 101px
+      height: 36px
+      font-size: 16px
+      line-height: 22px
+      border: 1px solid #ECEEF2
+      color: #FFFFFF
+      text-align: center
+      margin-left: 25px
+      margin-top: 20px
+  hr
+    border: 1px solid #ECEEF2
+    width: 312px
+    margin-top: 20px
+  .recom
+    position: relative
+    &-button
+      position: absolute
+      width: 358px
+      height: 50px
+      margin-right: 0
+      margin-left: 0px
+      transform: translate(-50%, -50%)
+      margin-top: -85px
+      text-align: center
+    &-cont
+      display: flex
+      align-items: center
+      justify-content: center
+  .lider
+    padding-top: 40px
+    &-title
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-left: 0
 @media (min-width: 320px) and (max-width: 400px)
   .container
     width: 87%
@@ -240,6 +539,7 @@
       margin-bottom: -20px
       padding-bottom: 0
   .about
+    padding-bottom: 50px
     &-title
       margin-top: -20px
       font-size: 32px
@@ -311,3 +611,140 @@
     &__title
       font-size: 14px
       margin-top: 10px
+  .books
+    &-title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 65px
+      margin-top: 15px
+  .card
+    display: flex
+    flex-direction: column
+    min-width: 280px
+    height: 312px
+    border: 1px solid red
+    border-radius: 8px
+    margin-bottom: 32px
+    margin-top: 5px
+  .hide
+    display: none
+  .recom
+    position: relative
+    &-button
+      position: absolute
+      width: 280px
+      height: 48px
+      font-size: 14px
+      line-height: 20px
+      margin-right: 0
+      margin-left: 0px
+      transform: translate(-50%, -50%)
+      margin-top: -70px
+      text-align: center
+  .book
+    transform: translate(5%, -2%)
+    &-image
+      position: absolute
+      left: 50%
+      margin-left: 0
+      transform: translate(-50%, -25%)
+      object-fit: cover
+      width: 95px
+      height: 140px
+
+    &-name
+      white-space: nowrap
+      font-size: 20px
+      line-height: 24px
+      text-align: center
+      letter-spacing: 0.2px
+      margin-top: 140px
+    &-genre
+      transform: translate(40%, -30%)
+      font-size: 14px
+      line-height: 20px
+      color: #183B56
+
+    &-price
+      transform: translate(48%, -80%)
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.2px
+      color: #1565D8
+
+    &-butlike
+      width: 170px
+      margin: 8px 0 0 60px
+    &-button
+      margin-top: 0px
+      min-width: 115px
+      height: 36px
+      font-size: 16px
+      line-height: 22px
+      color: #FFFFFF
+      text-align: center
+    &-like
+      margin-left: 18px
+  .card
+    &-big
+      width: 290px
+      height: 803px
+      border-radius: 8px
+      margin-left: 0px
+      background-color: #f7f8fa
+  .top
+    &-image
+      max-width: 96px
+      max-height: 145px
+      margin: 26px 0 0 15px
+      border-radius: 8px
+    &-wrap
+      display: flex
+      margin-bottom: 5px
+    &-link
+      display: flex
+      align-items: center
+      justify-content: center
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      text-align: center
+      letter-spacing: 0.2px
+      color: #1565D8
+      margin-top: 22px
+  .small
+    &-name
+      font-size: 16px
+      line-height: 24px
+      color: #183B56
+      letter-spacing: 0.2px
+      margin-left: 23px
+      margin-top: 30px
+    &-price
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: 0.2px
+      color: #1565D8
+      margin: 12px 0 0 25px
+    &-button
+      width: 101px
+      height: 36px
+      font-size: 16px
+      line-height: 22px
+      border: 1px solid #ECEEF2
+      color: #FFFFFF
+      text-align: center
+      margin-left: 25px
+      margin-top: 15px
+  hr
+    border: 1px solid #ECEEF2
+    width: 240px
+    margin-top: 33px
+  .lider
+    margin-top: -33px
+    &-title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 35px

@@ -17,39 +17,41 @@
 </head>
 
 <body>
-  <header class="navbar navbar--mobile_fixed">
-    <div class="container">
-      <div class="container-wrap">
-        <div class="navbar-top">
-          <a href="index.html" class="logo">
-            <img src="img/Logo.svg" alt="Logo: Book market" class="logo__image">
-          </a>
-          <div class="navbar__wrap">
-            <button class="menu-button navbar-top__menu-button">
-              <span class="menu-button__line"></span>
-              <span class="menu-button__line"></span>
-              <span class="menu-button__line"></span>
-            </button>
-          </div>
-          <div class="navbar-menu">
-            <div class="navbar-right">
-              <ul class="navbar-menu">
-                <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Рекомендации</a></li>
-                <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Книги</a></li>
-                <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Блог</a></li>
-                <li data-toggle="modal" class="navbar-menu__item"><a href="#"
-                    class="navbar-menu__link button-nav">Получить</a></li>
-              </ul>
-              <!-- /.navbar-menu -->
-
+  <div class="container">
+    <header class="navbar navbar--mobile_fixed">
+      <div class="container">
+        <div class="container-wrap">
+          <div class="navbar-top">
+            <a href="index.html" class="logo">
+              <img src="img/Logo.svg" alt="Logo: Book market" class="logo__image">
+            </a>
+            <div class="navbar__wrap">
+              <button class="menu-button navbar-top__menu-button">
+                <span class="menu-button__line"></span>
+                <span class="menu-button__line"></span>
+                <span class="menu-button__line"></span>
+              </button>
             </div>
-            <!-- ./navbar-right -->
+            <div class="navbar-menu">
+              <div class="navbar-right">
+                <ul class="navbar-menu">
+                  <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Рекомендации</a></li>
+                  <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Книги</a></li>
+                  <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Блог</a></li>
+                  <li data-toggle="modal" class="navbar-menu__item"><a href="#"
+                      class="navbar-menu__link-but button-nav">Получить</a></li>
+                </ul>
+                <!-- /.navbar-menu -->
+
+              </div>
+              <!-- ./navbar-right -->
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-  </header>
+    </header>
+  </div>
   <div class="about">
     <div class="container container-top">
       <div class="about-first">
@@ -75,7 +77,9 @@
   </div>
   <!-- ./about -->
   <div class="container container-books">
-    <h2 class="books-title">Рекомендации</h2>
+    <div class="container">
+      <h2 class="books-title">Рекомендации</h2>
+    </div>
     <div class="books">
       <!-- /.books-title -->
       <div class="books-first">
@@ -86,7 +90,7 @@
           <!-- /.recom-first -->
           <div class="recom-second">
             <div class="book">
-              <span class="book-name">The World of <br> Abstract Art</span>
+              <span class="book-name">The World of Abstract Art</span>
               <span class="book-genre">Art & Design</span>
               <span class="book-price">$25.00</span>
               <div class="book-butlike">
@@ -97,7 +101,7 @@
           </div>
         </div>
         <!-- /.card -->
-        <div class="card">
+        <div class="card hide">
           <div class="recom-first">
             <img src="img/recom/book-2.png" alt="icon: book-2" class="book-image">
           </div>
@@ -116,7 +120,7 @@
           </div>
         </div>
         <!-- /.card -->
-        <div class="card">
+        <div class="card hide">
           <div class="recom-first">
             <img src="img/recom/book-3.png" alt="icon: book-3" class="book-image">
           </div>
@@ -136,7 +140,7 @@
         <!-- /.card -->
       </div>
       <div class="books-second">
-        <div class="card">
+        <div class="card hide">
           <div class="recom-first">
             <img src="img/recom/book-4.png" alt="icon: book-4" class="book-image">
           </div>
@@ -154,7 +158,7 @@
           </div>
         </div>
         <!-- /.card -->
-        <div class="card">
+        <div class="card hide">
           <div class="recom-first">
             <img src="img/recom/book-5.png" alt="icon: book-5" class="book-image">
           </div>
@@ -172,7 +176,7 @@
           </div>
         </div>
         <!-- /.card -->
-        <div class="card">
+        <div class="card hide">
           <div class="recom-first">
             <img src="img/recom/book-6.png" alt="icon: book-1" class="book-image">
           </div>
@@ -190,9 +194,9 @@
           </div>
         </div>
         <!-- /.card -->
-        <a href="#"><button class="recom-button">БОЛЬШЕ РЕКОМЕНДАЦИЙ</button></a>
-      </div>
 
+      </div>
+      <div class="container recom-cont"><a href="#"><button class="recom-button">БОЛЬШЕ РЕКОМЕНДАЦИЙ</button></a></div>
       <div class="lider">
         <h2 class="lider-title">Топ Месяца</h2>
         <!-- /.lider-title -->
