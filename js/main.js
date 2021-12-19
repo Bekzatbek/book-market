@@ -115,4 +115,120 @@ allStates.on("click", function() {
   
 });
 
+$('.cont-slider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 2,
+  infinite: false,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 1201,
+      settings:{
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: false,   
+          variableWidth: false
+      },
+    },
+        {
+      breakpoint: 993,
+      settings:{
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: false,
+          variableWidth: false
+      },
+    },
+            {
+      breakpoint: 769,
+      settings:{
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: false,
+          variableWidth: false
+      },
+    },
+    {
+      breakpoint: 576,
+      settings:{
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          variableWidth: false,
+          centerMode: true
+      },
+    },
+        {
+      breakpoint: 401,
+      settings:{
+          slidesToShow: 1,
+          slidesToScroll: 7,
+          centerMode: false,
+          infinite: false,
+          variableWidth: false,
+         
+        
+      },
+    },
+  ]
+});
+
+
+$('.unpub-slider').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  infinite: false,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 1201,
+      settings:{
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: false,   
+          variableWidth: true
+      },
+    },
+        {
+      breakpoint: 993,
+      settings:{
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: false,
+          variableWidth: false
+      },
+    },
+            {
+      breakpoint: 768,
+      settings:{
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: false,
+          variableWidth: false
+      },
+    },
+    {
+      breakpoint: 576,
+      settings:{
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          variableWidth: false,
+          centerMode: false
+      },
+    },
+        {
+      breakpoint: 401,
+      settings:{
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          infinite: false,
+          variableWidth: false,
+         
+        
+      },
+    },
+  ]
+});
+
+
 });
