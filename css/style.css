@@ -956,24 +956,63 @@ template {
   margin-top: 20px;
 }
 
-a.book-like {
-  background: url(../img/recom/heart.png);
-  background-repeat: no-repeat;
+.kob {
+  color: red !important;
+  width: 30px;
+  margin-top: 20px;
+}
+
+.book-like {
+  font-size: 20px;
+  color: grey;
   display: block;
-  width: 20px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
-a.book-like:hover {
-  background: url(../img/recom/red-heart.png);
-  background-size: 20px;
-  background-repeat: no-repeat;
+.one {
+  font-size: 20px;
+  color: grey;
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 25px;
 }
 
-a.book-like:focus {
-  background: url(../img/recom/red-heart.png);
-  background-size: 20px;
-  background-repeat: no-repeat;
+.two {
+  font-size: 20px;
+  color: grey;
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.three {
+  font-size: 20px;
+  color: grey;
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.four {
+  font-size: 20px;
+  color: grey;
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.five {
+  font-size: 20px;
+  color: grey;
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 25px;
 }
 
 .cont-slider {
@@ -1110,8 +1149,9 @@ a.book-like:focus {
 
 .unpublished {
   background-color: #183B56;
-  padding-bottom: 50px;
+  padding-bottom: 5px;
   padding-top: -20px;
+  margin-bottom: 80px;
 }
 
 .unpub {

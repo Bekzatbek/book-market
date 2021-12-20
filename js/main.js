@@ -115,6 +115,26 @@ allStates.on("click", function() {
   
 });
 
+   $("#koob").click(function () {
+     $("span.book-like").toggleClass("kob");
+   });
+  $("#koobi").click(function () {
+     $("span.one").toggleClass("kob");
+   });
+  $("#koobi-two").click(function () {
+     $("span.two").toggleClass("kob");
+   });
+     $("#koobi-three").click(function () {
+     $("span.three").toggleClass("kob");
+   });
+     $("#koobi-four").click(function () {
+     $("span.four").toggleClass("kob");
+   });
+     $("#koobi-five").click(function () {
+     $("span.five").toggleClass("kob");
+   });
+
+
 $('.cont-slider').slick({
   slidesToShow: 4,
   slidesToScroll: 2,
