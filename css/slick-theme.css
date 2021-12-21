@@ -131,27 +131,35 @@ position: relative;
 @media (max-width: 575px){  
 .unpub-slider .slick-arrow{
     position: absolute;
-    top: 90%;
-    margin-right: 25px;
+    top: 85%;
+    margin-right: 85px;
     font-size: 0;
     z-index: 1000;
-    width: 54px;
-    height: 56px;
+   width: 46px;
+    height: 48px;
 }
+
+.unpub-slider .slick-arrow.slick-next{
+    right: 8px;
+    background: url('../img/unpub/But-next.svg') 0 0 / 100% no-repeat;
+    border: none
+    
+}
+
 }
 @media (max-width: 400px){  
 .unpub-slider .slick-arrow{
     position: absolute;
-    top: 93%;
-    margin-right: 60px;
+    top: 94%;
+    margin-right: 35px;
     margin-left: 60px;
     font-size: 0;
     z-index: 1000;
-    width: 48px;
-    height: 50px;
+    width: 46px;
+    height: 48px;
 }
 .unpub-slider .slick-arrow.slick-next{
-    right: 10px;
+    right: 14px;
     background: url('../img/unpub/But-next.svg') 0 0 / 100% no-repeat;
     border: none
     

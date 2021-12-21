@@ -242,7 +242,7 @@ $('.unpub-slider').slick({
           slidesToScroll: 1,
           centerMode: false,
           infinite: false,
-          variableWidth: false,
+          variableWidth: true,
          
         
       },

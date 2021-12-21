@@ -558,7 +558,7 @@
       position: absolute
       width: 358px
       height: 50px
-      margin-right: 0
+      margin-right: -358px
       margin-left: 0px
       transform: translate(-50%, -50%)
       margin-top: -85px
@@ -575,16 +575,32 @@
       justify-content: center
       margin-left: 0
   .unpub
-    &-slider
-      margin-right: 5px
-    &-img
-      width: 150px
-    &-title
+    &-cont
       display: flex
-      justify-content: center
       align-items: center
+      justify-content: center
+
+  .unpub
+
+    &-slider
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 304px
+      padding-top: 130px
+      margin-right: auto
+      margin-left: auto
+      margin-top: -5px
+    &-img
+      width: 232px
+      margin-right: 10px
+      margin-left: 10px
+      padding: 0
+    &-title
       font-size: 28px
       line-height: 36px
+      margin-top: -280px
+      margin-left: -2px
 @media (min-width: 320px) and (max-width: 400px)
 
   .container
@@ -698,9 +714,7 @@
       height: 48px
       font-size: 14px
       line-height: 20px
-      margin-right: 0
-      margin-left: 0px
-      transform: translate(-50%, -50%)
+      margin-right: -280px
       margin-top: -70px
       text-align: center
   .book
@@ -832,17 +846,23 @@
     height: 561px
     margin-top: 27px
   .unpub
+    &-cont
+      display: flex
+      align-items: center
+      justify-content: center
+  .unpub
     &-slider
+      width: 204px
       padding-top: 130px
-      margin-right: 10px
+      margin-right: 35px
       margin-left: 40px
+      margin-top: -5px
     &-img
       width: 232px
-
+      margin: 0
+      padding: 0
     &-title
-      display: flex
-      justify-content: center
-      align-items: center
       font-size: 28px
       line-height: 36px
-      margin-top: 50px
+      margin-top: -338px
+      margin-left: -2px
