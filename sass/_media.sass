@@ -6,6 +6,9 @@
       padding-bottom: 10px
     &-top
       background-color: #fff
+  .cont
+    &-slider
+      width: 1140px
 
 @media (max-width: 1200px)
   .container
@@ -150,6 +153,8 @@
         right: 0
         background-color: #fff
         z-index: 99
+        height: 80px
+        margin-top: -10px
     &-top
     &-menu
       display: flex
@@ -175,6 +180,8 @@
         justify-content: space-between
         width: 22px!important
         height: 2px!important
+        margin-top: -2px
+        margin-left: -15px
         background-color: black
   .line
     &-menu
@@ -182,6 +189,7 @@
   .navbar
     &-top
       padding-bottom: 15px
+      height: 70px
       &__menu-button
         position: absolute
         right: -20px
@@ -206,6 +214,7 @@
       background-color: #183B56
       z-index: 100
       width: 100%
+
       &--visible
         display: block
         overflow: scroll
@@ -304,6 +313,10 @@
       text-align: center
     &-like
       margin-left: 10px
+  .one
+    margin-left: 10px
+  .two
+    margin-left: 10px
   .card
     &-big
       width: 230px
@@ -375,9 +388,7 @@
     width: 265px
     height: 240px
     border-radius: 8px
-
     &-card
-
     &-name
       font-size: 18px
       line-height: 28px
@@ -494,6 +505,10 @@
       text-align: center
     &-like
       margin-left: 25px
+  .one
+    margin-left: 25px
+  .two
+    margin-left: 25px
   .card
     &-big
       width: 360px
@@ -602,7 +617,6 @@
       margin-top: -280px
       margin-left: -2px
 @media (min-width: 320px) and (max-width: 400px)
-
   .container
     width: 87%
     &-wrap
@@ -611,6 +625,10 @@
     &-top
       padding: 0
       margin-top: -18px
+    &--mobile
+      &_fixed
+        height: 70px
+        margin-top: 1px
   .logo
     &-image
       margin-bottom: -20px
@@ -649,7 +667,6 @@
       height: 333px
       &__img
         width: 170px
-
   .modal
     &__overlay
       position: fixed
@@ -712,10 +729,10 @@
       position: absolute
       width: 280px
       height: 48px
-      font-size: 14px
+      font-size: 16px
       line-height: 20px
       margin-right: -280px
-      margin-top: -70px
+      margin-top: -95px
       text-align: center
   .book
     transform: translate(5%, -2%)
@@ -727,7 +744,6 @@
       object-fit: cover
       width: 95px
       height: 140px
-
     &-name
       white-space: nowrap
       font-size: 20px
@@ -740,17 +756,15 @@
       font-size: 14px
       line-height: 20px
       color: #183B56
-
     &-price
       transform: translate(48%, -80%)
       font-size: 16px
       line-height: 20px
       letter-spacing: 0.2px
       color: #1565D8
-
     &-butlike
       width: 170px
-      margin: 8px 0 0 60px
+      margin: 6px 0 0 62px
     &-button
       margin-top: 0px
       min-width: 115px
@@ -828,20 +842,58 @@
       font-size: 28px
       line-height: 36px
       margin-bottom: 35px
-  .slider
-    display: none
-  .min
-    &-cont
-      display: flex
-      align-items: center
-      justify-content: center
-      margin-left: 28px
-      padding-top: 0px
 
   .cont
     &-slider
-      width: 100%
-      margin-top: -5px
+      display: none
+    &-slaid
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center
+      width: 305px
+      padding-bottom: 105px
+      padding-top: 40px
+      overflow: hidden
+
+  .slider
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    max-width: 140px
+    height: 182px
+    border-radius: 8px
+    border: 1px solid #ECEEF2
+    margin-top: 8px
+    margin-left: auto
+    margin-right: auto
+    overflow: hidden
+    &-card
+      margin: 18px 0 0 2px
+    &-img
+      width: 36px
+      height: 36px
+    &-name
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      width: 112px
+      font-size: 16px
+      line-height: 20px
+      text-align: center
+      letter-spacing: 0.2px
+      margin-top: 16px
+    &-genre
+      font-family: Open Sans
+      font-style: normal
+      font-size: 12px
+      line-height: 20px
+      text-align: center
+      color: #5A7184
+      margin-top: 10px
+      width: 99px
+
   .unpublished
     height: 561px
     margin-top: 27px

@@ -1025,6 +1025,10 @@ template {
   padding-top: 55px;
 }
 
+.cont-slaid {
+  display: none;
+}
+
 .line-bot {
   border: 1px solid #ECEEF2;
   margin-top: 40px;
@@ -1082,67 +1086,6 @@ template {
   margin-top: 10px;
 }
 
-.min-cont {
-  display: none;
-}
-
-.min-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 140px;
-  height: 182px;
-  border: 1px solid #ECEEF2;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.min-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 18px 0 0 12px;
-}
-
-.min-img {
-  width: 36px;
-  height: 36px;
-}
-
-.min-name {
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-weight: bold;
-  width: 112px;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.2px;
-  margin-top: 16px;
-}
-
-.min-genre {
-  font-family: Open Sans;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 20px;
-  text-align: center;
-  color: #5A7184;
-  margin-top: 10px;
-  width: 99px;
-}
-
-.min-wrap-top {
-  margin-right: 10px;
-}
-
 .motiv {
   margin-top: 30px;
 }
@@ -1194,6 +1137,9 @@ template {
   }
   .navbar-top {
     background-color: #fff;
+  }
+  .cont-slider {
+    width: 1140px;
   }
 }
 
@@ -1365,6 +1311,8 @@ template {
     right: 0;
     background-color: #fff;
     z-index: 99;
+    height: 80px;
+    margin-top: -10px;
   }
   .navbar-menu {
     display: -webkit-box;
@@ -1407,6 +1355,8 @@ template {
             justify-content: space-between;
     width: 22px !important;
     height: 2px !important;
+    margin-top: -2px;
+    margin-left: -15px;
     background-color: black;
   }
   .line-menu {
@@ -1414,6 +1364,7 @@ template {
   }
   .navbar-top {
     padding-bottom: 15px;
+    height: 70px;
   }
   .navbar-top__menu-button {
     position: absolute;
@@ -1567,6 +1518,12 @@ template {
     text-align: center;
   }
   .book-like {
+    margin-left: 10px;
+  }
+  .one {
+    margin-left: 10px;
+  }
+  .two {
     margin-left: 10px;
   }
   .card-big {
@@ -1825,6 +1782,12 @@ template {
   .book-like {
     margin-left: 25px;
   }
+  .one {
+    margin-left: 25px;
+  }
+  .two {
+    margin-left: 25px;
+  }
   .card-big {
     width: 360px;
     height: 942px;
@@ -1987,6 +1950,10 @@ template {
     padding: 0;
     margin-top: -18px;
   }
+  .navbar--mobile_fixed {
+    height: 70px;
+    margin-top: 1px;
+  }
   .logo-image {
     margin-bottom: -20px;
     padding-bottom: 0;
@@ -2112,10 +2079,10 @@ template {
     position: absolute;
     width: 280px;
     height: 48px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     margin-right: -280px;
-    margin-top: -70px;
+    margin-top: -95px;
     text-align: center;
   }
   .book {
@@ -2158,7 +2125,7 @@ template {
   }
   .book-butlike {
     width: 170px;
-    margin: 8px 0 0 60px;
+    margin: 6px 0 0 62px;
   }
   .book-button {
     margin-top: 0px;
@@ -2254,25 +2221,75 @@ template {
     line-height: 36px;
     margin-bottom: 35px;
   }
-  .slider {
+  .cont-slider {
     display: none;
   }
-  .min-cont {
+  .cont-slaid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 305px;
+    padding-bottom: 105px;
+    padding-top: 40px;
+    overflow: hidden;
+  }
+  .slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-left: 28px;
-    padding-top: 0px;
+    max-width: 140px;
+    height: 182px;
+    border-radius: 8px;
+    border: 1px solid #ECEEF2;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
   }
-  .cont-slider {
-    width: 100%;
-    margin-top: -5px;
+  .slider-card {
+    margin: 18px 0 0 2px;
+  }
+  .slider-img {
+    width: 36px;
+    height: 36px;
+  }
+  .slider-name {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    width: 112px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin-top: 16px;
+  }
+  .slider-genre {
+    font-family: Open Sans;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #5A7184;
+    margin-top: 10px;
+    width: 99px;
   }
   .unpublished {
     height: 561px;

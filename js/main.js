@@ -137,17 +137,31 @@ allStates.on("click", function() {
 
 $('.cont-slider').slick({
   slidesToShow: 4,
-  slidesToScroll: 2,
+  slidesToScroll: 1,
   infinite: false,
   variableWidth: true,
+
   responsive: [
+
+        {
+      breakpoint: 1441,
+      settings:{
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: false,   
+          variableWidth: true,
+          rows: 1,
+      },
+    },
+    
     {
       breakpoint: 1201,
       settings:{
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: false,   
-          variableWidth: false
+          variableWidth: true,
+          rows: 1,
       },
     },
         {
@@ -156,7 +170,8 @@ $('.cont-slider').slick({
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: false,
-          variableWidth: false
+          variableWidth: false,
+          rows: 1,
       },
     },
             {
@@ -166,6 +181,7 @@ $('.cont-slider').slick({
           slidesToScroll: 1,
           infinite: false,
           variableWidth: false
+
       },
     },
     {
@@ -180,18 +196,41 @@ $('.cont-slider').slick({
         {
       breakpoint: 401,
       settings:{
-          slidesToShow: 1,
-          slidesToScroll: 7,
+          slidesToShow: 2,
+          slidesToScroll: 1,
           centerMode: false,
           infinite: false,
           variableWidth: false,
-         
         
       },
     },
   ]
 });
 
+
+$('.cont-slaid').slick({
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  infinite: false,
+  centerMode: false,
+  variableWidth: true,
+  rows: 2,
+
+    responsive: [
+
+        {
+      breakpoint: 401,
+      settings:{
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false,
+          centerMode: false,   
+          variableWidth: false,
+          
+      },
+    },
+  ]
+});
 
 $('.unpub-slider').slick({
   slidesToShow: 5,
