@@ -225,3 +225,12 @@ position: relative;
     
 }
 }
+
+.video-big:hover .video-play {
+ fill: #5eebeb;
+}
+
+.minvideo:hover .minvideo-play {
+ fill: #5eebeb;
+ 
+}

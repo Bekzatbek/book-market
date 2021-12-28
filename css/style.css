@@ -1129,6 +1129,129 @@ template {
   color: #FFFFFF;
 }
 
+.history {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  justify-items: center;
+}
+
+.history-title {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+}
+
+.history-text {
+  width: 383px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #5A7184;
+}
+
+.video {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  row-gap: 20px;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  justify-items: center;
+}
+
+.video-big {
+  position: relative;
+}
+
+.video-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (315px)[3];
+      grid-template-columns: repeat(3, 315px);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  width: 30px;
+  height: 39px;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  z-index: 99;
+  text-align: center;
+}
+
+.minvideo-left {
+  position: relative;
+}
+
+.minvideo-center {
+  position: relative;
+}
+
+.minvideo-right {
+  position: relative;
+}
+
+.minvideo-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.minvideo-play {
+  fill: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  width: 30px;
+  height: 39px;
+  -webkit-transform: translate(5%, 0%);
+          transform: translate(5%, 0%);
+}
+
 @media (max-width: 1440px) {
   .navbar-right {
     margin-left: 635px;

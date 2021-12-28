@@ -290,4 +290,24 @@ $('.unpub-slider').slick({
 });
 
 
+
+
 });
+
+/* var player;
+$('.video-button').on('click', function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '360',
+          width: '100%',
+          videoId: 'eRHbk8bV7C0',
+          events: {
+            'onReady': playVideo,
+            
+          }
+        });
+        function videoPlay(event) {
+          event.target.playVideo();
+        }
+      }); */
+
+    
