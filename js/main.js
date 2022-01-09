@@ -150,7 +150,7 @@ $('.cont-slider').slick({
           slidesToScroll: 1,
           infinite: false,   
           variableWidth: true,
-          rows: 1,
+          
       },
     },
     
@@ -160,8 +160,8 @@ $('.cont-slider').slick({
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: false,   
-          variableWidth: true,
-          rows: 1,
+          variableWidth: false,
+          
       },
     },
         {
@@ -171,7 +171,7 @@ $('.cont-slider').slick({
           slidesToScroll: 1,
           infinite: false,
           variableWidth: false,
-          rows: 1,
+          
       },
     },
             {
@@ -189,19 +189,8 @@ $('.cont-slider').slick({
       settings:{
           slidesToShow: 1,
           slidesToScroll: 1,
-          variableWidth: false,
+          variableWidth: true,
           centerMode: true
-      },
-    },
-        {
-      breakpoint: 401,
-      settings:{
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          centerMode: false,
-          infinite: false,
-          variableWidth: false,
-        
       },
     },
   ]
@@ -210,22 +199,22 @@ $('.cont-slider').slick({
 
 $('.cont-slaid').slick({
   slidesToShow: 2,
-  slidesToScroll: 2,
+  slidesToScroll: 1,
   infinite: false,
   centerMode: false,
   variableWidth: true,
   rows: 2,
 
     responsive: [
-
         {
       breakpoint: 401,
       settings:{
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           infinite: false,
           centerMode: false,   
           variableWidth: false,
+          rows: 2,
           
       },
     },
@@ -308,6 +297,6 @@ $('.video-button').on('click', function onYouTubeIframeAPIReady() {
         function videoPlay(event) {
           event.target.playVideo();
         }
-      }); */
+      });  */
 
     

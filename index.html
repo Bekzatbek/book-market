@@ -14,9 +14,9 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 </head>
 
 <body>
@@ -404,7 +404,7 @@
     </div>
   </div>
   <!-- /.unpublished -->
-  <div class="container">
+  <div class="container cont-history">
     <div class="history">
       <h3 class="history-title">История Автора</h3>
       <p class="history-text">Это раздел авторского рассказа. Каждую неделю мы стараемся рассказать вам историю
@@ -415,10 +415,11 @@
       <div id="player" class="video-big">
         <a data-fancybox href="https://www.youtube.com/watch?v=eRHbk8bV7C0" class="video-link">
           <picture>
+            <source srcset="img/media-320.png" type="image/png" media="(max-width:400px)">
             <img class="video-media" src="/img/big-video-1.jpg" alt="icon: video-big">
           </picture>
           <form class="video-button" aria-label="запустить видео">
-            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="video-play" fill-rule="evenodd" clip-rule="evenodd"
                 d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100Z"
                 fill="white" />
@@ -431,52 +432,69 @@
 
       </div>
 
-      <div class="video-wrap">
-        <div class="minvideo-left minvideo">
-          <a data-fancybox href="https://www.youtube.com/watch?v=eRHbk8bV7C0" class="video-link">
-            <picture>
-              <img class="minvideo-media" src="/img/Image-left.png" alt="icon: video-big">
-            </picture>
-            <form class="minvideo-button" aria-label="запустить видео">
-              <svg width="31" height="37" viewBox="0 0 31 37" xmlns="http://www.w3.org/2000/svg">
-                <path class="minvideo-play"
-                  d="M28.2812 15.5273L4.90625 1.71484C2.98047 0.585938 0.125 1.71484 0.125 4.4375V32.0625C0.125 34.5859 2.78125 36.1133 4.90625 34.8516L28.2812 21.0391C30.3398 19.7773 30.3398 16.7891 28.2812 15.5273Z"
-                  fill="#1565D8" />
-              </svg>
-            </form>
-          </a>
+      <div class="container cont-wrap">
+        <div class="video-wrap">
+          <div class="minvideo-left minvideo">
+            <a data-fancybox href="https://www.youtube.com/watch?v=eRHbk8bV7C0" class="video-link">
+              <picture>
+                <source srcset="img/mini-left.png" type="image/png" media="(max-width:400px)">
+                <img class="minvideo-media" src="/img/Image-left.png" alt="icon: video-big">
+              </picture>
+              <form class="minvideo-button" aria-label="запустить видео">
+                <svg viewBox="0 0 31 37" xmlns="http://www.w3.org/2000/svg">
+                  <path class="minvideo-play"
+                    d="M28.2812 15.5273L4.90625 1.71484C2.98047 0.585938 0.125 1.71484 0.125 4.4375V32.0625C0.125 34.5859 2.78125 36.1133 4.90625 34.8516L28.2812 21.0391C30.3398 19.7773 30.3398 16.7891 28.2812 15.5273Z"
+                    fill="#1565D8" />
+                </svg>
+              </form>
+            </a>
+            <div class="name-wrap">
+              <span class="name">Emelda Scandroot</span>
+              <img src="img/Icon-check.svg" alt="Icon-check" class="checkbox">
+            </div>
+            <span class="name-author">Author of Books Tittle</span>
+          </div>
 
-        </div>
+          <div class="minvideo-center minvideo">
+            <a data-fancybox href="https://www.youtube.com/watch?v=eRHbk8bV7C0" class="video-link">
+              <picture>
+                <source srcset="img/mini-center.png" type="image/png" media="(max-width:400px)">
+                <img class="minvideo-media" src="/img/Image-center.png" alt="icon: video-big">
+              </picture>
+              <form class="minvideo-button" aria-label="запустить видео">
+                <svg viewBox="0 0 31 37" xmlns="http://www.w3.org/2000/svg">
+                  <path class="minvideo-play"
+                    d="M28.2812 15.5273L4.90625 1.71484C2.98047 0.585938 0.125 1.71484 0.125 4.4375V32.0625C0.125 34.5859 2.78125 36.1133 4.90625 34.8516L28.2812 21.0391C30.3398 19.7773 30.3398 16.7891 28.2812 15.5273Z"
+                    fill="#1565D8" />
+                </svg>
+              </form>
+            </a>
+            <div class="name-wrap">
+              <span class="name">Mar Rueda</span>
+              <img src="img/Icon-check.svg" alt="Icon-check" class="checkbox">
+            </div>
+            <span class="name-author">Author of Books Tittle</span>
+          </div>
 
-        <div class="minvideo-center minvideo">
-          <a data-fancybox href="https://www.youtube.com/watch?v=eRHbk8bV7C0" class="video-link">
-            <picture>
-              <img class="minvideo-media" src="/img/Image-center.png" alt="icon: video-big">
-            </picture>
-            <form class="minvideo-button" aria-label="запустить видео">
-              <svg width="31" height="37" viewBox="0 0 31 37" xmlns="http://www.w3.org/2000/svg">
-                <path class="minvideo-play"
-                  d="M28.2812 15.5273L4.90625 1.71484C2.98047 0.585938 0.125 1.71484 0.125 4.4375V32.0625C0.125 34.5859 2.78125 36.1133 4.90625 34.8516L28.2812 21.0391C30.3398 19.7773 30.3398 16.7891 28.2812 15.5273Z"
-                  fill="#1565D8" />
-              </svg>
-            </form>
-          </a>
-
-        </div>
-
-        <div class="minvideo-right minvideo">
-          <a data-fancybox href="https://www.youtube.com/watch?v=eRHbk8bV7C0" class="video-link">
-            <picture>
-              <img class="minvideo-media" src="/img/Image-right.png" alt="icon: video-big">
-            </picture>
-            <form class="minvideo-button" aria-label="запустить видео">
-              <svg width="31" height="37" viewBox="0 0 31 37" xmlns="http://www.w3.org/2000/svg">
-                <path class="minvideo-play"
-                  d="M28.2812 15.5273L4.90625 1.71484C2.98047 0.585938 0.125 1.71484 0.125 4.4375V32.0625C0.125 34.5859 2.78125 36.1133 4.90625 34.8516L28.2812 21.0391C30.3398 19.7773 30.3398 16.7891 28.2812 15.5273Z"
-                  fill="#1565D8" />
-              </svg>
-            </form>
-          </a>
+          <div class="minvideo-right minvideo right-hide">
+            <a data-fancybox href="https://www.youtube.com/watch?v=eRHbk8bV7C0" class="video-link">
+              <picture>
+                <img class="minvideo-media" src="/img/Image-right.png" alt="icon: video-big">
+              </picture>
+              <form class="minvideo-button" aria-label="запустить видео">
+                <svg width="31" height="37" viewBox="0 0 31 37" xmlns="http://www.w3.org/2000/svg">
+                  <path class="minvideo-play"
+                    d="M28.2812 15.5273L4.90625 1.71484C2.98047 0.585938 0.125 1.71484 0.125 4.4375V32.0625C0.125 34.5859 2.78125 36.1133 4.90625 34.8516L28.2812 21.0391C30.3398 19.7773 30.3398 16.7891 28.2812 15.5273Z"
+                    fill="#1565D8" />
+                </svg>
+              </form>
+            </a>
+            <div class="name-wrap">
+              <span class="name">Nembo Lukeni</span>
+              <img src="img/Icon-check.svg" alt="Icon-check" class="checkbox">
+            </div>
+            <span class="name-author">Author of Books Tittle</span>
+          </div>
         </div>
       </div>
 

@@ -16,7 +16,7 @@ position: relative;
     position: absolute;
     top: 50%;
     margin: -55px 0 0 0;
-    z-index: 10;
+    z-index: 10; 
     font-size: 0;
     width: 86px;
     height: 86px;
@@ -42,19 +42,45 @@ position: relative;
 @media (max-width: 1200px){
 
 .cont-slider .slick-arrow.slick-prev{
-    left: -20px;
+    left: -15px;
   
 }
+.cont-slider.slick-slider{
+    padding-left: 5px;
+}
+.cont-slider .slick-arrow.slick-next{
+    right: -12px;
+}
+
+}
+
+@media (max-width: 992px){
 
 .cont-slider .slick-arrow.slick-next{
     right: -20px;
+  
+}
+.cont-slider.slick-slider{
+    width: 630px;
+}
 }
 
+@media (max-width: 575px){
+.cont-slider.slick-slider{
+    width: 365px;
+}
+.cont-slider.slick-slider{
+    padding-left: 0px;
+}
+.cont-slider .slick-arrow.slick-prev{
+    left: -22px;
+    
+}
 }
 
 @media (max-width: 400px){
     .cont-slider .slick-arrow.slick-disabled{
-    opacity: 1
+    opacity: 0
 }
 
 .cont-slider .slick-arrow.slick-prev{
@@ -115,7 +141,7 @@ position: relative;
 }
 
 .cont-slaid .slick-arrow.slick-prev{
-     width: 70px;
+    width: 70px;
     height: 70px;
     left: -30px;
     margin-top: 188px;
@@ -154,6 +180,7 @@ position: relative;
     z-index: 1000;
     width: 54px;
     height: 56px;
+    border: 1px solid red
 }
 .unpub-slider .slick-arrow.slick-prev{
     right: 80px;
@@ -165,7 +192,6 @@ position: relative;
     right: 0;
     background: url('../img/unpub/But-next.svg') 0 0 / 100% no-repeat;
     border: none
-    
 }
 
  .unpub-slider .slick-arrow.slick-active{
@@ -175,7 +201,12 @@ position: relative;
     opacity: 0.3
     
 }
-
+.minvideo-button {
+  width: 30px;
+  top: 47%;
+  left: 50%;
+    
+}
 @media (max-width: 1200px){  
 .unpub-slider .slick-arrow{
     position: absolute;
@@ -186,6 +217,37 @@ position: relative;
     width: 54px;
     height: 56px;
 }
+}
+@media (max-width: 992px){  
+
+.video-button {
+  width: 50px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+.minvideo-button {
+  width: 25px;
+  top: 50%;
+left: 50%;
+    
+}
+}
+@media (max-width: 767px){  
+
+.video-button {
+  width: 40px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+.minvideo-button {
+  width: 20px;
+  top: 50%;
+left: 50%;
+    
+}
+
 }
 
 @media (max-width: 575px){  
@@ -205,7 +267,12 @@ position: relative;
     border: none
     
 }
-
+.video-button {
+  width: 40px;
+    position: absolute;
+    top: 67%;
+    left: 50%;
+}
 }
 @media (max-width: 400px){  
 .unpub-slider .slick-arrow{
@@ -222,6 +289,19 @@ position: relative;
     right: 14px;
     background: url('../img/unpub/But-next.svg') 0 0 / 100% no-repeat;
     border: none
+    
+}
+.video-button {
+    width: 56px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+.minvideo-button {
+  width: 21px;
+  height: 27px;
+  top: 35%;
+  left: 50%;
     
 }
 }
