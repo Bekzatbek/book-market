@@ -162,6 +162,9 @@
     &-center
       width: 340px
       margin-left: 15px
+  #pub
+    &-hide
+      display: none
 @media (max-width: 767px)
   .line
     &-bot
@@ -464,6 +467,11 @@
     &-wrap
     &-author
       font-size: 14px
+  .pub
+    &-title
+      font-size: 25px
+    &-img
+      width: 70%
 @media (max-width: 575px)
   .container
     width: 87%
@@ -695,6 +703,14 @@
       margin-bottom: 0
     &-author
       font-size: 12px
+  .pub
+    &-title
+      font-size: 24px
+    &-img
+      width: 70%
+  .hide
+    &-media
+      display: none
 @media (min-width: 320px) and (max-width: 400px)
   .container
     width: 87%
@@ -1030,7 +1046,7 @@
       row-gap: 10px
   .video
     row-gap: 20px
-    &-wrap
+    padding-bottom: 70px
   .minvideo
     min-width: 140px
     margin: 0
@@ -1063,3 +1079,42 @@
     position: absolute
     margin-top: 120px
     width: 10px
+  .hide
+    &-mediaa
+      display: none
+  .publishers
+    height: 344px
+  .pub
+    &-wrap
+      width: 90%
+    &-right
+      margin-left: 5px
+      width: 100%
+    &-top
+      width: 100%
+      display: grid
+      grid-template-columns: 1fr 1fr
+      row-gap: 20px
+      margin-top: 28px
+    &-bottom
+      width: 100%
+      display: grid
+      grid-template-columns: 1fr 1fr
+      margin-top: 20px
+    &-title
+      margin-top: 35px
+      font-size: 24px
+      line-height: 30px
+      text-align: center
+      letter-spacing: 0.2px
+  .bottom
+    &-left
+      width: 93%
+      margin-top: -1px
+      margin-left: 10px
+  #fit
+    width: 93%
+    margin-left: 12px
+    margin-top: 2px
+  #netflix
+    margin-top: 2px
