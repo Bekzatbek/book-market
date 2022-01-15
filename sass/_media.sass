@@ -86,6 +86,30 @@
     &-media
       width: 100%
       margin-right: 0
+  .first
+    &-img
+      width: 90%
+    &-text
+      width: 436px
+  .second
+    &-card
+      margin-bottom: 15px
+    &-img
+      width: 100%
+      object-fit: cover
+    &-date
+      font-size: 12px
+    &-text
+      font-size: 18px
+      width: 240px
+    &-link
+      font-size: 14px
+    &-right
+      margin-left: 20px
+  .ehya
+    &-form
+      padding: 0 20px
+
 @media (max-width: 992px)
   .line
     &-bot
@@ -165,6 +189,50 @@
   #pub
     &-hide
       display: none
+  .content
+    &-first
+      width: 50%
+  .first
+    &-title
+      font-size: 16px
+      margin-left: 0
+    &-text
+      width: 280px
+      line-height: 22px
+      font-size: 14px
+      margin-left: 0
+  .second
+    &-about
+      margin-top: 0
+    &-card
+      margin-bottom: 10px
+    &-img
+      width: 100%
+      height: 90%
+      object-fit: cover
+    &-date
+      font-size: 10px
+    &-text
+      font-size: 16px
+      width: 200px
+      margin-top: 5px
+      line-height: 22px
+    &-link
+      font-size: 12px
+      margin-top: 5px
+    &-right
+      margin-left: 20px
+  .ehya
+    &-form
+      display: flex
+      flex-direction: column
+    &-title
+      font-size: 38px
+  .form
+    &-title
+      margin-top: 10px
+    &-form
+      padding-bottom: 30px
 @media (max-width: 767px)
   .line
     &-bot
@@ -472,6 +540,41 @@
       font-size: 25px
     &-img
       width: 70%
+  .content
+    &-first
+      margin-right: 20px
+  .first
+    &-img
+      width: 100%
+    &-title
+      font-size: 14px
+      margin-left: 0
+    &-text
+      width: 220px
+      line-height: 22px
+      font-size: 12px
+      margin-left: 0
+  .second
+    &-about
+      margin-top: 0
+    &-card
+      margin-bottom: 10px
+    &-img
+      width: 95%
+      height: 90%
+      object-fit: cover
+    &-date
+      font-size: 8px
+    &-text
+      font-size: 12px
+      width: 150px
+      margin-top: 5px
+      line-height: 15px
+    &-link
+      font-size: 10px
+      margin-top: 5px
+    &-right
+      margin-left: 0px
 @media (max-width: 575px)
   .container
     width: 87%
@@ -711,6 +814,62 @@
   .hide
     &-media
       display: none
+  .ehya
+    &-content
+      display: flex
+      flex-direction: column
+  .content
+    &-first
+      width: 100%
+  .first
+    &-img
+      width: 100%
+    &-title
+      font-size: 18px
+      margin-left: 0
+    &-text
+      min-width: 350px
+      line-height: 22px
+      font-size: 14px
+      margin-left: 0
+  .second
+    &-about
+      margin-top: 0
+    &-card
+      margin-bottom: 10px
+    &-img
+      width: 150px
+      object-fit: cover
+    &-date
+      font-size: 10px
+    &-text
+      font-size: 12px
+      width: 150px
+      margin-top: 5px
+      line-height: 18px
+    &-link
+      font-size: 10px
+      margin-top: 5px
+    &-right
+      margin-left: 10px
+  .form
+    &-title
+      font-size: 28px
+      width: 280px
+      line-height: 36px
+      padding: 0
+    &-form
+    &-input
+      width: 272px
+      height: 112px
+      padding-bottom: 60px
+      background-position: 20px 20px
+    &-button
+      margin-top: 60px
+      margin-left: -260px
+      width: 250px
+      height: 42px
+
 @media (min-width: 320px) and (max-width: 400px)
   .container
     width: 87%
@@ -1084,6 +1243,7 @@
       display: none
   .publishers
     height: 344px
+    margin-bottom: 45px
   .pub
     &-wrap
       width: 90%
@@ -1118,3 +1278,80 @@
     margin-top: 2px
   #netflix
     margin-top: 2px
+  .content
+    &-second
+      margin-top: 17px
+      margin-bottom: 25px
+  .first
+    &-img
+      min-width: 280px
+      height: 120px
+      object-fit: cover
+    &-title
+      font-size: 16px
+      margin-left: 0
+      margin-top: 9px
+    &-text
+      min-width: 280px
+      line-height: 24px
+      font-size: 12px
+      margin-left: 0
+      margin-top: -12px
+  .second
+    &-about
+      margin-top: 0
+    &-card
+      margin-bottom: 28px
+    &-img
+      min-width: 90px
+      height: 90px
+      object-fit: cover
+    &-date
+      font-size: 10px
+    &-text
+      font-size: 14px
+      line-height: 20px
+      width: 171px
+      margin-top: 5px
+    &-link
+      font-size: 10px
+      margin-top: 5px
+    &-right
+      margin-left: 20px
+  .form
+    &-wrap
+      min-width: 320px
+    &-title
+      font-size: 28px
+      width: 200px
+      line-height: 36px
+      margin-left: -70px
+      margin-top: 24px
+    &-form
+    &-input
+      width: 272px
+      height: 112px
+      padding-bottom: 56px
+      background-position: 20px 22px
+    &-button
+      margin-top: 60px
+      margin-left: -260px
+      width: 250px
+      height: 42px
+  .ehya
+    display: block
+    text-align: center
+    &-title
+      font-size: 28px
+    &-content
+      margin-top: -5px
+    &-button
+      position: absolute
+      margin-top: 675px
+      margin-left: -80px
+      width: 159px
+      font-size: 14px
+    &-form
+      background-image: url(../img/CTA-min.png)
+      border-radius: 0
+      height: 306px
