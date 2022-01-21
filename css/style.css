@@ -1592,7 +1592,7 @@ template {
 
 .footer-log {
   margin-right: 3px;
-  margin-top: 3px;
+  margin-top: 1px;
 }
 
 .footer-span {
@@ -1800,6 +1800,12 @@ template {
   .ehya-form {
     padding: 0 20px;
   }
+  .footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 263px 173px 177px 173px 195px;
+        grid-template-columns: 263px 173px 177px 173px 195px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1954,6 +1960,43 @@ template {
   }
   .form-form {
     padding-bottom: 30px;
+  }
+  .footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto auto auto auto 100px;
+        grid-template-rows: auto auto auto auto 100px;
+        grid-template-areas: "heart heart heart heart heart";
+  }
+  .footer-copyright {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: heart;
+    grid-column: span 5;
+    grid-row: span 5;
+    margin: 42px auto;
+  }
+  .footer-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 6;
   }
 }
 
@@ -2384,6 +2427,66 @@ template {
   .second-right {
     margin-left: 0px;
   }
+  .footer-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  .footer-product {
+    padding-left: 0;
+  }
+  .footer-services {
+    padding-left: 0;
+  }
+  .footer-company {
+    padding-left: 0;
+  }
+  .footer-more {
+    padding-left: 0;
+  }
+  .product {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: #183B56;
+    margin-bottom: 31px;
+  }
+  .product-item {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: #183B56;
+    margin-bottom: 24px;
+  }
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+  .footer-span {
+    font-size: 13px;
+  }
+  .footer-log {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2801,6 +2904,69 @@ template {
     margin-left: -260px;
     width: 250px;
     height: 42px;
+  }
+  .footer {
+    -ms-grid-columns: 200px;
+        grid-template-columns: 200px;
+  }
+  .footer-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  .footer-product {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-left: 15px;
+  }
+  .footer-services {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-left: 40px;
+  }
+  .footer-company {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+  .footer-more {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-left: 40px;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+  .product {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #183B56;
+    margin-bottom: 31px;
+  }
+  .product-item {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 12px;
+    color: #183B56;
+    margin-bottom: 24px;
   }
 }
 
@@ -3437,6 +3603,79 @@ template {
     background-image: url(../img/CTA-min.png);
     border-radius: 0;
     height: 306px;
+  }
+  .form-wrap {
+    margin-bottom: 30px;
+  }
+  .footer {
+    padding-bottom: 0;
+    height: 680px;
+  }
+  .footer-product {
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin-left: 5px;
+  }
+  .footer-services {
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin-left: -53px;
+  }
+  .footer-company {
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin-left: 5px;
+    margin-top: 5px;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+  .footer-more {
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin-left: -53px;
+    margin-top: 5px;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+  .footer-copyright {
+    display: none;
+  }
+  .footer-logo {
+    margin-top: -10px;
+    margin-bottom: 0;
+  }
+  .footer-span {
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 10px;
+    margin-right: 6px;
+  }
+  .footer-pic {
+    margin-top: 13px;
+    margin-left: 6px;
+  }
+  .footer-log {
+    margin-right: 3px;
+    width: 42px;
+    height: 40px;
+  }
+  .product {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #183B56;
+    margin-bottom: 20px;
+  }
+  .product-item {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #183B56;
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -109,7 +109,9 @@
   .ehya
     &-form
       padding: 0 20px
-
+  .footer
+    display: grid
+    grid-template-columns: 263px 173px 177px 173px 195px
 @media (max-width: 992px)
   .line
     &-bot
@@ -233,6 +235,26 @@
       margin-top: 10px
     &-form
       padding-bottom: 30px
+  .footer
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-rows: auto auto auto auto 100px
+    grid-template-areas: "heart heart heart heart heart"
+    &-copyright
+      grid-area: heart
+      grid-column: span 5
+      grid-row: span 5
+      margin: 42px auto
+  .footer
+    &-logo
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      align-items: center
+      grid-row-start: 2
+      grid-column-start: 1
+      grid-column-end: 6
+
 @media (max-width: 767px)
   .line
     &-bot
@@ -575,6 +597,47 @@
       margin-top: 5px
     &-right
       margin-left: 0px
+  .footer
+    &-logo
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      grid-row-start: 2
+      grid-column-start: 1
+      grid-column-end: 6
+    &-product
+      padding-left: 0
+    &-services
+      padding-left: 0
+    &-company
+      padding-left: 0
+    &-more
+      padding-left: 0
+  .product
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 18px
+    color: #183B56
+    margin-bottom: 31px
+    &-item
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 15px
+      color: #183B56
+      margin-bottom: 24px
+  .footer
+    &-logo
+      margin-bottom: 20px
+    &-span
+      font-size: 13px
+    &-log
+      width: 40px
+      height: 40px
 @media (max-width: 575px)
   .container
     width: 87%
@@ -869,7 +932,45 @@
       margin-left: -260px
       width: 250px
       height: 42px
-
+  .footer
+    grid-template-columns: 200px
+    &-logo
+      display: flex
+      flex-direction: column
+      text-align: center
+      align-items: center
+      grid-row-start: 3
+      grid-column-start: 1
+      grid-column-end: 6
+    &-product
+      justify-self: center
+      margin-left: 15px
+    &-services
+      justify-self: center
+      margin-left: 40px
+    &-company
+      justify-self: center
+      grid-row-start: 2
+    &-more
+      justify-self: center
+      margin-left: 40px
+      grid-row-start: 2
+  .product
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 18px
+    color: #183B56
+    margin-bottom: 31px
+    &-item
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 12px
+      color: #183B56
+      margin-bottom: 24px
 @media (min-width: 320px) and (max-width: 400px)
   .container
     width: 87%
@@ -1355,3 +1456,58 @@
       background-image: url(../img/CTA-min.png)
       border-radius: 0
       height: 306px
+  .form
+    &-wrap
+      margin-bottom: 30px
+  .footer
+    padding-bottom: 0
+    height: 680px
+    &-product
+      justify-self: start
+      margin-left: 5px
+    &-services
+      justify-self: start
+      margin-left: -53px
+    &-company
+      justify-self: start
+      margin-left: 5px
+      margin-top: 5px
+      grid-row-start: 2
+    &-more
+      justify-self: start
+      margin-left: -53px
+      margin-top: 5px
+      grid-row-start: 2
+    &-copyright
+      display: none
+    &-logo
+      margin-top: -10px
+      margin-bottom: 0
+    &-span
+      font-size: 15px
+      line-height: 28px
+      margin-top: 10px
+      margin-right: 6px
+    &-pic
+      margin-top: 13px
+      margin-left: 6px
+    &-log
+      margin-right: 3px
+      width: 42px
+      height: 40px
+  .product
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: #183B56
+    margin-bottom: 20px
+    &-item
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #183B56
+      margin-bottom: 15px
