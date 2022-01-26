@@ -1,7 +1,9 @@
 *
   box-sizing: border-box
+  scroll-behavior: smooth
 body
   overflow-x: hidden /*для горизонтального*/
+
 .container
   max-width: 1140px
   margin: auto
@@ -14,5 +16,13 @@ a
   text-decoration: none
 button
   border-radius: 8px
+  cursor: pointer
 .modal
   font-family: Open Sans
+.navbar-menu__link:hover
+  color: #2de6cd
+.lin
+  cursor: pointer
+@media (max-width: 400px)
+  button
+    cursor: none

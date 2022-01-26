@@ -1,3 +1,11 @@
+@media (max-width: 1920px)
+  .navbar
+    &-right
+      margin-left: 635px
+      margin-top: -45px
+      padding-bottom: 10px
+    &-top
+      background-color: #fff
 @media (max-width: 1440px)
   .navbar
     &-right
@@ -112,6 +120,9 @@
   .footer
     display: grid
     grid-template-columns: 263px 173px 177px 173px 195px
+  .form
+    &-button
+      right: 25px
 @media (max-width: 992px)
   .line
     &-bot
@@ -191,6 +202,8 @@
   #pub
     &-hide
       display: none
+    &-hid
+      display: none
   .content
     &-first
       width: 50%
@@ -254,6 +267,12 @@
       grid-row-start: 2
       grid-column-start: 1
       grid-column-end: 6
+  .form
+    &-button
+      top: 151px
+      right: 129px
+  .formm
+    margin-top: -19px
 
 @media (max-width: 767px)
   .line
@@ -295,6 +314,7 @@
   .logo
     &__image
       width: 90px
+      margin-top: -5px
       padding-top: 40px
   .menu
     &-button
@@ -317,7 +337,7 @@
       &__menu-button
         position: absolute
         right: -20px
-        margin-top: -25px
+        margin-top: -87px
         background-color: #fff
         width: 22px
         height: 16px
@@ -336,12 +356,12 @@
       bottom: 0
       top: 70px
       background-color: #183B56
-      z-index: 100
+      z-index: 10011111
       width: 100%
-
       &--visible
         display: block
         overflow: scroll
+        padding-top: 50px
     &-button
       text-align: center
   .button-nav
@@ -638,6 +658,17 @@
     &-log
       width: 40px
       height: 40px
+  .ehya
+    &-form
+      position: relative
+      margin: auto
+      width: 490px
+  .form
+    &-button
+      position: absolute
+      top: 151px
+      right: 25px
+
 @media (max-width: 575px)
   .container
     width: 87%
@@ -915,6 +946,13 @@
       margin-top: 5px
     &-right
       margin-left: 10px
+  .formm
+    width: 280px
+    margin-top: 25px
+  .ehya
+    &-form
+      display: block
+      width: 350px
   .form
     &-title
       font-size: 28px
@@ -922,16 +960,19 @@
       line-height: 36px
       padding: 0
     &-form
+      width: 230px
     &-input
-      width: 272px
-      height: 112px
-      padding-bottom: 60px
+      position: relative
+      margin: auto
+      width: 310px
+      height: 90px
+      padding-bottom: 40px
       background-position: 20px 20px
     &-button
-      margin-top: 60px
-      margin-left: -260px
-      width: 250px
+      position: absolute
+      width: 290px
       height: 42px
+      right: 30px
   .footer
     grid-template-columns: 200px
     &-logo
@@ -972,6 +1013,8 @@
       color: #183B56
       margin-bottom: 24px
 @media (min-width: 320px) and (max-width: 400px)
+  body
+    margin-top: -18px
   .container
     width: 87%
     &-wrap
@@ -980,14 +1023,20 @@
     &-top
       padding: 0
       margin-top: -18px
+      &__menu
+        &-button
+          margin-top: -37px
     &--mobile
       &_fixed
-        height: 70px
+        height: 60px
         margin-top: 1px
+    &-right
+      &--visible
+        margin-top: -10px
   .logo
-    &-image
-      margin-bottom: -20px
-      padding-bottom: 0
+    &__image
+      margin-top: 0px
+      padding-bottom: 10px
   .about
     padding-bottom: 50px
     &-title
@@ -1014,7 +1063,7 @@
       &__read
         width: 176px
         font-size: 16px
-        padding: 7px 26px
+        padding: 7px 20px
         margin-bottom: 36px
     &-second
       margin-top: -10px
@@ -1344,7 +1393,7 @@
       display: none
   .publishers
     height: 344px
-    margin-bottom: 45px
+    margin-bottom: 55px
   .pub
     &-wrap
       width: 90%
@@ -1387,6 +1436,7 @@
     &-img
       min-width: 280px
       height: 120px
+      margin-top: 12px
       object-fit: cover
     &-title
       font-size: 16px
@@ -1422,43 +1472,65 @@
   .form
     &-wrap
       min-width: 320px
+  .form
     &-title
       font-size: 28px
       width: 200px
       line-height: 36px
-      margin-left: -70px
-      margin-top: 24px
+      padding: 0
     &-form
+      width: 230px
+    &-wrap
+      position: relative
+      width: 320px
     &-input
+      position: relative
+      top: 20px
+      margin: auto
       width: 272px
       height: 112px
-      padding-bottom: 56px
+      padding-bottom: 55px
       background-position: 20px 22px
     &-button
-      margin-top: 60px
-      margin-left: -260px
+      position: absolute
       width: 250px
       height: 42px
+      right: 37px
+      top: 220px
+  .blog
+    margin-top: 15px
   .ehya
     display: block
     text-align: center
     &-title
       font-size: 28px
+      width: 280px
+      line-height: 36px
+      padding: 0
     &-content
       margin-top: -5px
     &-button
       position: absolute
-      margin-top: 675px
+      margin-top: 688px
       margin-left: -80px
       width: 159px
       font-size: 14px
     &-form
       background-image: url(../img/CTA-min.png)
       border-radius: 0
+      width: 100%
       height: 306px
   .form
     &-wrap
       margin-bottom: 30px
+    &-title
+      margin-top: 27px
+      margin-left: 3px
+    &-button
+      margin-top: 3px
+  .formm
+    margin-top: -10px
+    margin-left: 2px
   .footer
     padding-bottom: 0
     height: 680px

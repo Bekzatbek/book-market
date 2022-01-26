@@ -69,7 +69,7 @@ position: relative;
 .cont-slider.slick-slider{
     width: 535px;
 }
-
+}
 
 @media (max-width: 575px){
 .cont-slider.slick-slider{
@@ -155,10 +155,10 @@ position: relative;
     position: absolute;
     top: 11%;
     font-size: 0;
-    z-index: 1000;
+    z-index: 10;
     width: 54px;
     height: 56px;
-    border: 1px solid red
+   
 }
 .unpub-slider .slick-arrow.slick-prev{
     right: 80px;
@@ -284,11 +284,108 @@ left: 50%;
 }
 }
 
-.video-big:hover .video-play {
- fill: #5eebeb;
+
+.menu-button:hover {
+    background-color: #fff;
+}
+.inputEmail{
+    position: absolute;
+    margin-top: 50px;
+}
+.inval {
+    position: relative;
+    display: block;
+    color: tomato;
+   
+}   
+
+@media (min-width: 320px) and (max-width: 400px) {
+    label.inval {
+    margin-left: 15px;
+    margin-top: -111px;
+    font-size: 14px;
+    white-space: nowrap;
+
 }
 
-.minvideo:hover .minvideo-play {
- fill: #5eebeb;
- 
+}
+
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .inval {
+        margin-top: 0px;
+   
+} 
+label.inval {
+    margin-left: 5px;
+    margin-top: -111px;
+    font-size: 14px;
+    
+}
+}
+
+@media (min-width: 992px) and (max-width: 1920px) {
+.ehya-button:hover {
+    background-color: #2de6cd;
+}
+
+.topbutton {
+width:100px;
+border:2px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:10px;
+position:fixed;
+bottom:50px;
+right:50px;
+cursor:pointer;
+color: #5A7184;
+font-family: Roboto; 
+font-style: normal;
+font-weight: normal;
+font-size:12px;
+border-radius: 5px;
+z-index: 11111;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+}
+.topbutton:hover {
+    background-color: #2de6cd;
+}
+
+    .footer-log {
+        border: 2px solid transparent;
+        border-radius: 50%;
+    }
+    .footer-log:hover {
+        border: 2px solid #2de6cd;
+        border-radius: 50%;
+    }
+.lin:hover {
+    color: #2de6cd;
+}
+
+ button:hover {
+    background-color: #2de6cd;
+ }
+ .second-link:hover {
+    color: #2de6cd;
+ }
+ .button-nav:hover {
+    background-color: #2de6cd;
+ }
+ .about-click__read:hover {
+    background-color: #2de6cd;
+ }
+ .top-link:hover {
+    color: #2de6cd;
+ }
+    .video-big:hover .video-play {
+    fill: #5eebeb;
+    }
+
+    .minvideo:hover .minvideo-play {
+    fill: #5eebeb;
+    }
 }

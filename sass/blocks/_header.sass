@@ -2,6 +2,7 @@
 .navbar
   &-top
     background-color: #fff
+    z-index: 111
     &__menu-button
       display: none
   &--mobile
@@ -12,9 +13,12 @@
       right: 0
       background-color: #fff
       z-index: 99
+      height: 120px
+
   &-menu
     display: flex
     align-items: center
+    margin-top: -30px
     &__item
       font-family: Open Sans
       font-style: SemiBold
@@ -24,6 +28,7 @@
     &__link:last-child
       margin-right: 22px
       color: #183B56
+      z-index: 200
   &-right
     display: flex
     align-items: center
@@ -32,13 +37,14 @@
     margin-left: 600px
 .container
   &-wrap
-    height: 60px
+    min-height: 60px
     margin-top: -20px
     padding-top: 15px
 .logo
   &__image
     width: 90px
     padding-top: 52px
+    padding-bottom: 62px
 .button-nav
   color: #1565D8
   border: 2px solid #1565D8
@@ -52,6 +58,7 @@
   line-height: 22px
   border-radius: 8px
   cursor: pointer
+  z-index: 20022
 .container
   &-top
     display: flex
@@ -59,7 +66,6 @@
 .about
   padding-top: 195px
   padding-bottom: 100px
-
   &-title
     font-size: 48px
     line-height: 60px
@@ -108,7 +114,7 @@
       border: 2px solid $primary
       color: $primary
       font-family: Open Sans
-      font-style: Bold
+      font-style: normal
       font-weight: 700
       font-size: 18px
       line-height: 25px

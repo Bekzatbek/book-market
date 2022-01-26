@@ -35,12 +35,58 @@ const reviewsSlider = new Swiper('.reviews-slider', {
  
 });
 
+let popupBg = document.querySelector('.modal__overlay'); // Фон попап окна
+let popup = document.querySelector('.modal__dialog'); // Само окно
+let openPopupButtons = document.querySelectorAll('.mod'); // Кнопки для показа окна
+let closePopupButton = document.querySelector('.modal__close'); // Кнопка для скрытия окна
+
+openPopupButtons.forEach((button) => { // Перебираем все кнопки
+    button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+        e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+        popupBg.classList.add('modal__overlay--visible'); // Добавляем класс 'active' для фона
+        popup.classList.add('modal__dialog--visible'); // И для самого окна
+    })
+});
+
+closePopupButton.addEventListener('click',() => { // Вешаем обработчик на крестик
+    popupBg.classList.remove('modal__overlay--visible'); // Убираем активный класс с фона
+    popup.classList.remove('modal__dialog--visible'); // И с окна
+});
+
+document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+    if(e.target === popupBg) { // Если цель клика - фот, то:
+        popupBg.classList.remove('modal__overlay--visible'); // Убираем активный класс с фона
+        popup.classList.remove('modal__dialog--visible'); // И с окна
+    }
+});
+
+document.addEventListener('keydown', function(e) {
+    if(e.key === 'Escape') {
+      popupBg.classList.remove('modal__overlay--visible'); // Убираем активный класс с фона
+        popup.classList.remove('modal__dialog--visible'); // И с окна
+    }
+  });
+
 var menuButton = $(".menu-button");
 menuButton.on("click", function () {
 $(".navbar-right").toggleClass("navbar-right--visible");
+$(".unpub-slider").css("display", "none");
+}); 
+
+
+var Butt = $(".form-button");
+Butt.on("click", function () {
+  
+$(".form-button").css("margin-top", "0px");
+
+
+
 });
 
-var modalButton = $("[data-toggle=modal]");
+
+
+
+/* var modalButton = $("[data-toggle=modal]");
 var closeModalButton = $(".modal__close");
 modalButton.on('click', openModal);
 closeModalButton.on("click", closeModal);
@@ -58,45 +104,61 @@ function openModal() {
  
   
 }
+ */
+/* document.addEventListener("click" , function() {
+  if(addEventListener === closeModalButton) {
+    modalOverlay.removeClass("modal__overlay--visible");
+  modalDialog.removeClass("modal__dialog--visible");
+  }
+}) */
 
-function closeModal(event) {
+/* function closeModal(event) {
   event.preventDefault();
   var modalOverlay = $(".modal__overlay");
   var modalDialog = $(".modal__dialog");
   modalOverlay.removeClass("modal__overlay--visible");
   modalDialog.removeClass("modal__dialog--visible");
-}
+} */
+
+
+
 // Обработка форм
+
 
 $(".form").each(function () {
   $(this).validate({
     errorClass: "invalid",
     messages: {
     name: {
-      required: "Please specify your name",
-      minlength: "Name must be at least 2 letters"
+      required: "Пожалуйста, укажите ваше имя",
+      minlength: "Имя должно быть не менее 2 букв"
     },
     email: {
-      required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com"
+      required: "Нам нужен ваш адрес электронной почты, чтобы связаться с вами",
+      email: "Ваш адрес электронной почты должен быть в формате имя@домен.com"
     },
     phone: {
-       required: "Please specify your phone number",
-       minlength: "please enter a valid phone number"
+       required: "Пожалуйста, укажите ваш номер телефона",
+       minlength: "Пожалуйста, введите корректный телефонный номер"
     }
   },
 });
 })
 
-$(".subscribe").validate({
+$(".form-form").validate({
     errorClass: "inval",
     messages: {
     email: {
-      required: "This field is required",
-      email: "Please enter a valid email address"
+      required: "Заполните поле",
+      email: "Введите действительный адрес"
     },
   },
 });
+
+/* $('.form-form').on('afterValidate', function (e) {
+    $(".form-form").css("border", "10px");
+    
+}); */
 
 $(document).ready(function () {
 $("#phone").mask("+7(999) 999-99-99");
@@ -114,6 +176,8 @@ allStates.on("click", function() {
   $(this).addClass("on");
   
 });
+
+
 
    $("#koob").click(function () {
      $("span.book-like").toggleClass("kob");

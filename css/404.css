@@ -1,0 +1,82 @@
+.error {
+    height: 600px;
+ 
+}
+
+.errorr {
+    margin: 100px auto auto auto;
+    text-align: center;
+    font-size: 55px;
+    color: #183B56
+}
+
+.errorr-er {
+    font-size: 300px;
+}
+.errorr-err {
+    margin-top: -60px;
+}
+.error-link {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: -200px auto 200px auto;
+    color: #1565D8;
+  border: 2px solid #1565D8;
+  background-color: #fff;
+  padding: 15px 60px;
+ text-align: center;
+  font-family: Open Sans;
+  font-style: Bold;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+@media (min-width: 992px) and (max-width: 1920px) {
+    .error-link:hover {
+        background-color: #2de6cd;
+    }
+}
+
+@media (max-width: 575px){ 
+    .errorr {
+    margin: 100px auto auto auto;
+    text-align: center;
+    font-size: 35px;
+    color: #183B56
+}
+
+.errorr-er {
+    font-size: 200px;
+}
+.errorr-err {
+    margin-top: -40px;
+}
+.error-link {
+    margin: -350px auto 100px auto;
+}
+
+}
+@media (max-width: 400px){ 
+    .errorr {
+    margin: 100px auto auto auto;
+    text-align: center;
+    font-size: 30px;
+    color: #183B56
+}
+
+.errorr-er {
+    font-size: 180px;
+}
+.errorr-err {
+    margin-top: -30px;
+}
+.error-link {
+    margin: -350px auto 100px auto;
+    font-size: 20px;
+}
+
+}
